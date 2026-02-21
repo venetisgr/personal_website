@@ -63,6 +63,7 @@ export const companies: Company[] = [
               "Designed NFCU's first internal assistant utilizing RAG technology in order to assist call representatives and other internal teams to automate their daily workflow.",
               "Designed an automated LLM-as-a-Judge evaluation framework for RAG systems aligned with human scoring.",
               "Delivered transcript-driven insight analyses (issues, benefits, competitive comparisons, etc.) for CD and credit card products that informed and influenced product revamp discussions.",
+              "Built a hybrid transformer + LLM praise detection pipeline to isolate high-impact praise and extract reasoning. Created the equivalent for complaint detection.",
             ],
           },
         ],
