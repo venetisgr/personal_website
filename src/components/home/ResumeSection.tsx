@@ -195,15 +195,59 @@ export default function ResumeSection() {
           </div>
         </motion.div>
 
-        {/* Skills */}
+        {/* Categorized Skills */}
         <motion.div
+          className="mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.35 }}
         >
-          <h3 className="mb-4 text-lg font-semibold text-foreground">
+          <h3 className="mb-4 flex items-center gap-2 text-lg font-semibold text-foreground">
+            <Sparkles size={18} className="text-primary" />
             Skills
+          </h3>
+          <div className="space-y-3">
+            {resume.categorizedSkills.map((group) => (
+              <div key={group.category} className="rounded-xl border border-border bg-card p-4 shadow-sm">
+                <h4 className="mb-2 text-sm font-semibold text-primary">
+                  {group.category}
+                </h4>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  {group.items.join(", ")}
+                </p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Logo */}
+        <motion.div
+          className="mb-12 flex justify-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <Image
+            src="/welcome_logo.png"
+            alt="Welcome logo"
+            width={700}
+            height={700}
+            className="rounded-xl"
+          />
+        </motion.div>
+
+        {/* Technical Skills, Domains & Tools */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, delay: 0.45 }}
+        >
+          <h3 className="mb-4 flex items-center gap-2 text-lg font-semibold text-foreground">
+            <Sparkles size={18} className="text-primary" />
+            Technical Skills, Domains &amp; Tools
           </h3>
           <div className="flex flex-wrap gap-2">
             {resume.skills.map((skill) => (
@@ -214,15 +258,6 @@ export default function ResumeSection() {
                 {skill}
               </span>
             ))}
-          </div>
-          <div className="mt-8 flex justify-center">
-            <Image
-              src="/welcome_logo.png"
-              alt="Welcome logo"
-              width={700}
-              height={700}
-              className="rounded-xl"
-            />
           </div>
         </motion.div>
       </div>
