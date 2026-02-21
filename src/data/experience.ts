@@ -1,11 +1,22 @@
-export interface Job {
-  id: string;
-  company: string;
-  role: string;
+export interface YearDetail {
+  year: string;
+  highlights: string[];
+  details: string[];
+}
+
+export interface Role {
+  title: string;
   period: string;
   location: string;
-  description: string;
-  achievements: string[];
+  years: YearDetail[];
+}
+
+export interface Company {
+  id: string;
+  name: string;
+  startYear: string;
+  endYear: string;
+  roles: Role[];
 }
 
 export interface Education {
@@ -25,50 +36,37 @@ export interface Certification {
   year: string;
 }
 
-export const jobs: Job[] = [
+export const companies: Company[] = [
   {
-    id: "job-1",
-    company: "TechCorp Inc.",
-    role: "Senior Software Engineer",
-    period: "Jan 2023 – Present",
-    location: "San Francisco, CA",
-    description:
-      "Leading development of the core platform serving millions of users. Working across the full stack with React, Node.js, and AWS.",
-    achievements: [
-      "Architected and led migration from monolith to microservices, cutting deploy time by 70%",
-      "Built real-time analytics dashboard used by 50K+ daily active users",
-      "Established code review standards and mentored 4 junior engineers",
-      "Reduced infrastructure costs by 25% through performance optimization",
-    ],
-  },
-  {
-    id: "job-2",
-    company: "StartupXYZ",
-    role: "Software Engineer",
-    period: "Jun 2021 – Dec 2022",
-    location: "Remote",
-    description:
-      "Full-stack development on a SaaS platform helping small businesses manage operations. Worked in a fast-paced agile environment.",
-    achievements: [
-      "Developed a payment processing system handling $2M+ in monthly transactions",
-      "Built a customer-facing API consumed by 200+ third-party integrations",
-      "Implemented automated testing pipeline, increasing code coverage from 40% to 85%",
-      "Led the front-end rewrite from jQuery to React, improving page load times by 60%",
-    ],
-  },
-  {
-    id: "job-3",
-    company: "DataSystems Ltd.",
-    role: "Junior Software Engineer",
-    period: "Aug 2019 – May 2021",
-    location: "New York, NY",
-    description:
-      "Contributed to enterprise data management tools used by Fortune 500 clients. Focused on back-end services and database optimization.",
-    achievements: [
-      "Developed ETL pipelines processing 10M+ records daily",
-      "Reduced database query times by 40% through indexing and query optimization",
-      "Built internal monitoring dashboard used by the operations team",
-      "Contributed to API documentation that reduced onboarding time by 50%",
+    id: "nfcu",
+    name: "Navy Federal Credit Union",
+    startYear: "2024",
+    endYear: "Present",
+    roles: [
+      {
+        title: "Senior Data Scientist",
+        period: "2024 – Present",
+        location: "Vienna, VA",
+        years: [
+          {
+            year: "2024",
+            highlights: [
+              "Architected and productionized the enterprise Insight Discovery Framework (Map → Reduce → Classification), transforming large-scale call and chat data into structured intelligence used across departments.",
+              "Finetuned and deployed the organization's first 7B and 70B LLM models.",
+              "Standardized LLM inference across the enterprise by building reusable GPU-optimized template notebooks (utilizing vLLM and LangChain), establishing the fastest production baseline.",
+            ],
+            details: [
+              "Architected and productionized the enterprise Insight Discovery Framework (Map → Reduce → Classification), transforming large-scale call and chat data into structured intelligence used across departments. This framework can be used to surface product issues, member complaints, praise signals, competitive comparisons, and emerging themes, etc.",
+              "Enabled rapid post-launch feedback analysis for a major mobile app update (Omni V7), systematically surfacing complaints and praise and feeding insights directly to design and development teams for accelerated issue resolution.",
+              "Standardized LLM inference across the enterprise by building reusable GPU-optimized template notebooks (utilizing vLLM and LangChain), establishing the fastest production baseline.",
+              "Finetuned and deployed the organization's first 7B and 70B LLM models.",
+              "Designed NFCU's first internal assistant utilizing RAG technology in order to assist call representatives and other internal teams to automate their daily workflow.",
+              "Designed an automated LLM-as-a-Judge evaluation framework for RAG systems aligned with human scoring.",
+              "Delivered transcript-driven insight analyses (issues, benefits, competitive comparisons, etc.) for CD and credit card products that informed and influenced product revamp discussions.",
+            ],
+          },
+        ],
+      },
     ],
   },
 ];

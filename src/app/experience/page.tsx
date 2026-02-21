@@ -1,11 +1,9 @@
-import Timeline from "@/components/experience/Timeline";
-import EducationCard from "@/components/experience/EducationCard";
-import SkillBadges from "@/components/experience/SkillBadges";
-import { jobs, education, certifications } from "@/data/experience";
+import ExperienceTabs from "@/components/experience/ExperienceTabs";
+import { companies, certifications } from "@/data/experience";
 
 export const metadata = {
-  title: "Experience | Alex Johnson",
-  description: "Work experience, education, and certifications.",
+  title: "Experience | Venetis-Paraskevas Pallikaras",
+  description: "Work experience and certifications.",
 };
 
 export default function ExperiencePage() {
@@ -17,37 +15,11 @@ export default function ExperiencePage() {
           Experience & Qualifications
         </h1>
         <p className="mt-3 max-w-2xl text-muted-foreground">
-          A timeline of my professional journey, education, and certifications.
+          A timeline of my professional journey and certifications.
         </p>
       </div>
 
-      {/* Work experience timeline */}
-      <section className="mb-16">
-        <h2 className="mb-8 text-xl font-semibold text-foreground">
-          Work Experience
-        </h2>
-        <Timeline jobs={jobs} />
-      </section>
-
-      {/* Education */}
-      <section className="mb-16">
-        <h2 className="mb-6 text-xl font-semibold text-foreground">
-          Education
-        </h2>
-        <div className="grid gap-4">
-          {education.map((edu, index) => (
-            <EducationCard key={edu.id} education={edu} index={index} />
-          ))}
-        </div>
-      </section>
-
-      {/* Certifications */}
-      <section>
-        <h2 className="mb-6 text-xl font-semibold text-foreground">
-          Certifications
-        </h2>
-        <SkillBadges certifications={certifications} />
-      </section>
+      <ExperienceTabs companies={companies} certifications={certifications} />
     </div>
   );
 }
