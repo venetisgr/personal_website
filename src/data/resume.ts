@@ -53,8 +53,7 @@ export const resume = {
       role: "Senior Data Scientist, Data Scientist",
       location: "USA",
       period: "2023 – Present",
-      description:
-        "Design and deploy production-scale AI systems focused on NLP, Generative AI applications, Advanced Machine Learning, and Deep Learning.",
+      description: "",
     },
     {
       company: "Georgia Institute of Technology",
