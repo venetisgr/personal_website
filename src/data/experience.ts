@@ -40,22 +40,17 @@ export const companies: Company[] = [
   {
     id: "nfcu",
     name: "Navy Federal Credit Union",
-    startYear: "2024",
+    startYear: "2023",
     endYear: "Present",
     roles: [
       {
         title: "Senior Data Scientist",
-        period: "2024 – Present",
+        period: "2023 – Present",
         location: "Vienna, VA",
         years: [
           {
             year: "2024",
             highlights: [
-              "Architected and productionized the enterprise Insight Discovery Framework (Map → Reduce → Classification), transforming large-scale call and chat data into structured intelligence used across departments.",
-              "Finetuned and deployed the organization's first 7B and 70B LLM models.",
-              "Standardized LLM inference across the enterprise by building reusable GPU-optimized template notebooks (utilizing vLLM and LangChain), establishing the fastest production baseline.",
-            ],
-            details: [
               "Architected and productionized the enterprise Insight Discovery Framework (Map → Reduce → Classification), transforming large-scale call and chat data into structured intelligence used across departments. This framework can be used to surface product issues, member complaints, praise signals, competitive comparisons, and emerging themes, etc.",
               "Enabled rapid post-launch feedback analysis for a major mobile app update (Omni V7), systematically surfacing complaints and praise and feeding insights directly to design and development teams for accelerated issue resolution.",
               "Standardized LLM inference across the enterprise by building reusable GPU-optimized template notebooks (utilizing vLLM and LangChain), establishing the fastest production baseline.",
@@ -64,6 +59,9 @@ export const companies: Company[] = [
               "Designed an automated LLM-as-a-Judge evaluation framework for RAG systems aligned with human scoring.",
               "Delivered transcript-driven insight analyses (issues, benefits, competitive comparisons, etc.) for CD and credit card products that informed and influenced product revamp discussions.",
               "Built a hybrid transformer + LLM praise detection pipeline to isolate high-impact praise and extract reasoning. Created the equivalent for complaint detection.",
+            ],
+            details: [
+              "More details coming soon.",
             ],
           },
         ],
