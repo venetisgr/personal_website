@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Building2, ChevronDown, ChevronRight, MapPin } from "lucide-react";
-import type { Company } from "@/data/experience";
+import type { Company, DetailSection, ContentBlock } from "@/data/experience";
 
 interface CompanyTimelineProps {
   companies: Company[];
@@ -78,26 +78,18 @@ function CompanyCard({ company, index }: { company: Company; index: number }) {
 function YearSection({
   yearDetail,
 }: {
-  yearDetail: { year: string; highlights: string[]; details: string[] };
+  yearDetail: { year: string; highlights: string[]; details: DetailSection[] };
 }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
     <div className="rounded-lg border border-border/60 bg-background">
-      {/* Year header — clickable */}
-      <button
-        onClick={() => setExpanded((prev) => !prev)}
-        className="flex w-full items-center gap-2 px-4 py-3 text-left transition-colors hover:bg-muted/50"
-      >
-        {expanded ? (
-          <ChevronDown size={16} className="flex-shrink-0 text-primary" />
-        ) : (
-          <ChevronRight size={16} className="flex-shrink-0 text-primary" />
-        )}
+      {/* Year header */}
+      <div className="flex items-center gap-2 px-4 py-3">
         <span className="text-sm font-semibold text-foreground">
           {yearDetail.year}
         </span>
-      </button>
+      </div>
 
       {/* Highlights — always visible */}
       <div className="px-4 pb-3">
@@ -114,35 +106,73 @@ function YearSection({
         </ul>
       </div>
 
-      {/* Expanded details */}
-      <AnimatePresence>
-        {expanded && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            className="overflow-hidden"
+      {/* Detailed accomplishments toggle */}
+      {yearDetail.details.length > 0 && (
+        <>
+          <button
+            onClick={() => setExpanded((prev) => !prev)}
+            className="flex w-full items-center gap-2 border-t border-border/40 px-4 py-2.5 text-left transition-colors hover:bg-muted/50"
           >
-            <div className="border-t border-border/40 px-4 py-3">
-              <p className="mb-2 text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                All accomplishments
-              </p>
-              <ul className="space-y-2">
-                {yearDetail.details.map((d, i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-2 text-sm text-muted-foreground"
-                  >
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent/70" />
-                    <span>{d}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </motion.div>
+            {expanded ? (
+              <ChevronDown size={14} className="flex-shrink-0 text-primary" />
+            ) : (
+              <ChevronRight size={14} className="flex-shrink-0 text-primary" />
+            )}
+            <span className="text-xs font-semibold tracking-wide text-primary">
+              Detailed accomplishments
+            </span>
+          </button>
+
+          <AnimatePresence>
+            {expanded && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="overflow-hidden"
+              >
+                <div className="space-y-5 border-t border-border/40 px-4 py-4">
+                  {yearDetail.details.map((section, i) => (
+                    <DetailSectionBlock key={i} section={section} />
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </>
+      )}
+    </div>
+  );
+}
+
+function DetailSectionBlock({ section }: { section: DetailSection }) {
+  return (
+    <div>
+      <h5 className="mb-2 text-sm font-semibold text-foreground">
+        {section.title}
+      </h5>
+      <div className="space-y-2">
+        {section.content.map((block, i) =>
+          Array.isArray(block) ? (
+            <ul key={i} className="space-y-1.5 pl-1">
+              {block.map((item, j) => (
+                <li
+                  key={j}
+                  className="flex items-start gap-2 text-sm text-muted-foreground"
+                >
+                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent/70" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p key={i} className="text-sm text-muted-foreground">
+              {block}
+            </p>
+          ),
         )}
-      </AnimatePresence>
+      </div>
     </div>
   );
 }
