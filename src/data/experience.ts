@@ -57,7 +57,7 @@ export const companies: Company[] = [
         location: "Vienna, VA",
         years: [
           {
-            year: "2024",
+            year: "2024 — AI/ML Center of Excellence",
             highlights: [
               "Architected and productionized the enterprise Insight Discovery Framework (Map → Reduce → Classification), transforming large-scale call and chat data into structured intelligence used across departments. This framework can be used to surface product issues, member complaints, praise signals, competitive comparisons, and emerging themes, etc.",
               "Enabled rapid post-launch feedback analysis for a major mobile app update (Omni V7), systematically surfacing complaints and praise and feeding insights directly to design and development teams for accelerated issue resolution.",
