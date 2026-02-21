@@ -108,8 +108,7 @@ export const resume = {
         "Artificial Neural Network Performance Boost using Probabilistic Recovery with Fast Cascade Training",
       authors:
         "A. Maniatopoulos, A. Gazis, V.P. Pallikaras, N. Mitianoudis",
-      journal:
-        "International Journal of Circuits, Systems and Signal Processing, Vol. 14, pp. 847–854",
+      journal: "International Journal of Circuits, Systems and Signal Processing",
       date: "November 2020",
       url: "https://www.researchgate.net/publication/348234182_Artificial_Neural_Network_Performance_Boost_using_Probabilistic_Recovery_with_Fast_Cascade_Training",
     },
