@@ -219,8 +219,8 @@ export default function ResumeSection() {
             <Image
               src="/welcome_logo.png"
               alt="Welcome logo"
-              width={350}
-              height={350}
+              width={700}
+              height={700}
               className="rounded-xl"
             />
           </div>
