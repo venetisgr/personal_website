@@ -26,7 +26,7 @@ export interface Publication {
 
 export const resume = {
   summary:
-    "Senior Data Scientist specializing in NLP, Generative AI, Machine Learning, and Deep Learning. Proven experience architecting and deploying production-scale LLM pipelines, RAG systems, agentic AI workflows, and advanced predictive models in enterprise environments. Georgia Tech MSc in Analytics graduate with a 4.0 GPA and a published researcher in Retrieval Augmented Generation.",
+    "Senior Data Scientist specializing in NLP, Generative AI, Machine Learning, and Deep Learning. Proven experience architecting and deploying production-scale LLM pipelines, RAG systems, agentic AI workflows, and advanced predictive models in enterprise environments.",
   education: [
     {
       institution: "Georgia Institute of Technology",
