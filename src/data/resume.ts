@@ -100,9 +100,9 @@ export const resume = {
         "Retrieval Augmented Generation for Liquid Sodium Facility Documentation Processing",
       authors:
         "K. Prantikos, V. Pallikaras, M. Pantopoulou, L.H. Tsoukalas, A. Heifetz",
-      journal: "ANS Transactions, Vol. 131, No. 1, pp. 332–334",
-      date: "November 2024",
-      url: "https://www.ans.org/pubs/transactions/article-56983/",
+      journal: "2024 ANS Winter Conference and Expo",
+      date: "December 2024",
+      url: "https://www.researchgate.net/publication/387798937_Retrieval_Augmented_Generation_for_Liquid_Sodium_Facility_Documentation_Processing",
     },
     {
       title:
@@ -112,7 +112,7 @@ export const resume = {
       journal:
         "International Journal of Circuits, Systems and Signal Processing, Vol. 14, pp. 847–854",
       date: "November 2020",
-      doi: "10.46300/9106.2020.14.110",
+      url: "https://www.researchgate.net/publication/348234182_Artificial_Neural_Network_Performance_Boost_using_Probabilistic_Recovery_with_Fast_Cascade_Training",
     },
   ] as Publication[],
   skills: [
