@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, Sparkles, Trophy } from "lucide-react";
+import { Download, Sparkles, GraduationCap } from "lucide-react";
 import { resume } from "@/data/resume";
 
 export default function ResumeSection() {
@@ -46,13 +46,62 @@ export default function ResumeSection() {
           </p>
         </motion.div>
 
-        {/* Skills */}
+        {/* Education */}
         <motion.div
           className="mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <h3 className="mb-4 flex items-center gap-2 text-lg font-semibold text-foreground">
+            <GraduationCap size={18} className="text-primary" />
+            Education
+          </h3>
+          <div className="space-y-4">
+            {resume.education.map((edu) => (
+              <div
+                key={edu.institution}
+                className="rounded-xl border border-border bg-card p-5 shadow-sm"
+              >
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+                  <h4 className="font-semibold text-foreground">
+                    {edu.institution}
+                  </h4>
+                  <span className="text-xs text-muted-foreground">
+                    {edu.period}
+                  </span>
+                </div>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  {edu.degree} &middot; {edu.location}
+                </p>
+                <p className="mt-1 text-sm font-medium text-primary">
+                  GPA: {edu.gpa}
+                </p>
+                {edu.honors && edu.honors.length > 0 && (
+                  <ul className="mt-2 space-y-1">
+                    {edu.honors.map((item, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-2 text-sm text-muted-foreground"
+                      >
+                        <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary/60" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Skills */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
           <h3 className="mb-4 text-lg font-semibold text-foreground">
             Skills
@@ -67,27 +116,6 @@ export default function ResumeSection() {
               </span>
             ))}
           </div>
-        </motion.div>
-
-        {/* Highlights */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-        >
-          <h3 className="mb-4 flex items-center gap-2 text-lg font-semibold text-foreground">
-            <Trophy size={18} className="text-primary" />
-            Key Highlights
-          </h3>
-          <ul className="space-y-3">
-            {resume.highlights.map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
-                <span className="leading-relaxed">{item}</span>
-              </li>
-            ))}
-          </ul>
         </motion.div>
       </div>
     </section>

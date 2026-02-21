@@ -4,9 +4,9 @@ import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alex Johnson | Software Engineer",
+  title: "Venetis-Paraskevas Pallikaras | Senior Data Scientist",
   description:
-    "Personal portfolio of Alex Johnson — full-stack software engineer specializing in React, Node.js, and cloud infrastructure.",
+    "Personal portfolio of Venetis-Paraskevas Pallikaras — Senior Data Scientist specializing in NLP, Generative AI, and machine learning.",
 };
 
 export default function RootLayout({

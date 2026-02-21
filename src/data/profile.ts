@@ -1,12 +1,12 @@
 export const profile = {
-  name: "Alex Johnson",
-  title: "Full-Stack Software Engineer",
-  bio: "I'm a software engineer who loves building products that make a difference. With experience spanning front-end interfaces, back-end systems, and cloud infrastructure, I enjoy turning complex problems into clean, maintainable solutions. When I'm not coding, you'll find me exploring open-source projects, writing technical articles, or tinkering with side projects.",
-  email: "alex.johnson@email.com",
-  location: "San Francisco, CA",
+  name: "Venetis-Paraskevas Pallikaras",
+  title: "Senior Data Scientist",
+  bio: "Senior Data Scientist at Navy Federal Credit Union with a background in NLP, Generative AI, and machine learning. I hold an MSc in Analytics from Georgia Tech (4.0 GPA) and a BSc & MSc in Electrical and Computer Engineering from Democritus University of Thrace. I enjoy building end-to-end AI pipelines — from LLM-powered insight discovery to RAG systems — and turning unstructured data into actionable intelligence.",
+  email: "venetispall@gmail.com",
+  location: "McLean, VA",
   social: {
-    github: "https://github.com/alexjohnson",
-    linkedin: "https://linkedin.com/in/alexjohnson",
-    email: "mailto:alex.johnson@email.com",
+    github: "https://github.com/venetisgr",
+    linkedin: "https://linkedin.com/in/venetis-pallikaras",
+    email: "mailto:venetispall@gmail.com",
   },
 };
