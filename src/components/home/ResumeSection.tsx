@@ -1,7 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, Sparkles, GraduationCap } from "lucide-react";
+import {
+  Sparkles,
+  GraduationCap,
+  Briefcase,
+  BookOpen,
+  ExternalLink,
+} from "lucide-react";
 import { resume } from "@/data/resume";
 
 export default function ResumeSection() {
@@ -14,19 +20,9 @@ export default function ResumeSection() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
         >
-          <div className="mb-12 flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-foreground sm:text-3xl">
-              Resume
-            </h2>
-            <a
-              href="/resume.pdf"
-              download
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              <Download size={16} />
-              Download PDF
-            </a>
-          </div>
+          <h2 className="mb-12 text-2xl font-bold text-foreground sm:text-3xl">
+            Resume
+          </h2>
         </motion.div>
 
         {/* Summary */}
@@ -96,12 +92,114 @@ export default function ResumeSection() {
           </div>
         </motion.div>
 
+        {/* Work Experience */}
+        <motion.div
+          className="mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, delay: 0.25 }}
+        >
+          <h3 className="mb-4 flex items-center gap-2 text-lg font-semibold text-foreground">
+            <Briefcase size={18} className="text-primary" />
+            Work Experience
+          </h3>
+          <div className="space-y-4">
+            {resume.experience.map((job) => (
+              <div
+                key={job.company}
+                className="rounded-xl border border-border bg-card p-5 shadow-sm"
+              >
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+                  <h4 className="font-semibold text-foreground">
+                    {job.company}
+                  </h4>
+                  {job.period && (
+                    <span className="text-xs text-muted-foreground">
+                      {job.period}
+                    </span>
+                  )}
+                </div>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  {job.role} &middot; {job.location}
+                </p>
+                {job.description && (
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {job.description}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Publications */}
+        <motion.div
+          className="mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          <h3 className="mb-4 flex items-center gap-2 text-lg font-semibold text-foreground">
+            <BookOpen size={18} className="text-primary" />
+            Publications
+          </h3>
+          <div className="space-y-4">
+            {resume.publications.map((pub) => (
+              <div
+                key={pub.title}
+                className="rounded-xl border border-border bg-card p-5 shadow-sm"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <h4 className="font-semibold text-foreground">{pub.title}</h4>
+                  {(pub.url || pub.doi) && (
+                    <a
+                      href={
+                        pub.url ||
+                        `https://doi.org/${pub.doi}`
+                      }
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-0.5 flex-shrink-0 text-primary transition-colors hover:text-primary/80"
+                      aria-label="View publication"
+                    >
+                      <ExternalLink size={16} />
+                    </a>
+                  )}
+                </div>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  {pub.authors}
+                </p>
+                <p className="mt-1 text-sm italic text-muted-foreground">
+                  {pub.journal}
+                </p>
+                <div className="mt-1 flex items-center gap-3">
+                  <span className="text-xs text-muted-foreground">
+                    {pub.date}
+                  </span>
+                  {pub.doi && (
+                    <a
+                      href={`https://doi.org/${pub.doi}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-primary hover:underline"
+                    >
+                      DOI: {pub.doi}
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
         {/* Skills */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.35 }}
         >
           <h3 className="mb-4 text-lg font-semibold text-foreground">
             Skills

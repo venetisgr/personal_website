@@ -7,6 +7,23 @@ export interface EducationEntry {
   honors?: string[];
 }
 
+export interface WorkExperienceEntry {
+  company: string;
+  role: string;
+  location: string;
+  period: string;
+  description: string;
+}
+
+export interface Publication {
+  title: string;
+  authors: string;
+  journal: string;
+  date: string;
+  doi?: string;
+  url?: string;
+}
+
 export const resume = {
   summary:
     "Senior Data Scientist with expertise in NLP, Generative AI, and machine learning. Experienced in designing and deploying LLM-powered pipelines, RAG systems, and predictive models at enterprise scale. Georgia Tech MSc in Analytics graduate with a 4.0 GPA and a published researcher in Retrieval Augmented Generation.",
@@ -30,6 +47,60 @@ export const resume = {
       ],
     },
   ] as EducationEntry[],
+  experience: [
+    {
+      company: "Navy Federal Credit Union",
+      role: "Senior Data Scientist",
+      location: "USA",
+      period: "Present",
+      description:
+        "Design and deploy production-scale AI systems focused on NLP, Generative AI applications, Advanced Machine Learning, and Deep Learning.",
+    },
+    {
+      company: "General Electric",
+      role: "Data Scientist",
+      location: "USA",
+      period: "",
+      description: "",
+    },
+    {
+      company: 'National Centre for Scientific Research "Demokritos"',
+      role: "Researcher",
+      location: "Greece",
+      period: "",
+      description: "",
+    },
+  ] as WorkExperienceEntry[],
+  publications: [
+    {
+      title:
+        "Agentic Retrieval Augmented Generation for Advanced Reactor Thermal Hydraulic System",
+      authors:
+        "K. Prantikos, V. Pallikaras, M. Pantopoulou, L.H. Tsoukalas, A. Heifetz",
+      journal: "2024 ANS Winter Conference and Expo",
+      date: "December 2024",
+      url: "https://www.researchgate.net/publication/387798703_Agentic_Retrieval_Augmented_Generation_for_Advanced_Reactor_Thermal_Hydraulic_System",
+    },
+    {
+      title:
+        "Retrieval Augmented Generation for Liquid Sodium Facility Documentation Processing",
+      authors:
+        "K. Prantikos, V. Pallikaras, M. Pantopoulou, L.H. Tsoukalas, A. Heifetz",
+      journal: "ANS Transactions, Vol. 131, No. 1, pp. 332–334",
+      date: "November 2024",
+      url: "https://www.ans.org/pubs/transactions/article-56983/",
+    },
+    {
+      title:
+        "Artificial Neural Network Performance Boost using Probabilistic Recovery with Fast Cascade Training",
+      authors:
+        "A. Maniatopoulos, A. Gazis, V.P. Pallikaras, N. Mitianoudis",
+      journal:
+        "International Journal of Circuits, Systems and Signal Processing, Vol. 14, pp. 847–854",
+      date: "November 2020",
+      doi: "10.46300/9106.2020.14.110",
+    },
+  ] as Publication[],
   skills: [
     "Python",
     "SQL",

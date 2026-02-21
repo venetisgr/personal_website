@@ -1,13 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Github, Linkedin, MapPin } from "lucide-react";
 import { profile } from "@/data/profile";
 
 const socialLinks = [
   { href: profile.social.github, icon: Github, label: "GitHub" },
   { href: profile.social.linkedin, icon: Linkedin, label: "LinkedIn" },
-  { href: profile.social.email, icon: Mail, label: "Email" },
 ];
 
 export default function HeroSection() {
@@ -42,14 +41,21 @@ export default function HeroSection() {
           {profile.title}
         </motion.h2>
 
-        <motion.p
-          className="mb-8 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg"
+        <motion.div
+          className="mb-8 max-w-2xl space-y-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          {profile.bio}
-        </motion.p>
+          {profile.bio.map((paragraph, i) => (
+            <p
+              key={i}
+              className="text-base leading-relaxed text-muted-foreground sm:text-lg"
+            >
+              {paragraph}
+            </p>
+          ))}
+        </motion.div>
 
         <motion.div
           className="flex flex-wrap items-center gap-4"
@@ -61,6 +67,13 @@ export default function HeroSection() {
             <MapPin size={16} />
             {profile.location}
           </span>
+          <span className="hidden h-4 w-px bg-border sm:block" />
+          <a
+            href={profile.social.email}
+            className="text-sm text-muted-foreground transition-colors hover:text-primary"
+          >
+            {profile.email}
+          </a>
           <span className="hidden h-4 w-px bg-border sm:block" />
           <div className="flex items-center gap-3">
             {socialLinks.map((link) => (
