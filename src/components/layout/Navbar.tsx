@@ -9,7 +9,9 @@ import { profile } from "@/data/profile";
 
 const navLinks = [
   { href: "/", label: "Home" },
+  { href: "/resume", label: "Resume" },
   { href: "/experience", label: "Work Experience" },
+  { href: "/certifications", label: "Certifications" },
   { href: "/projects", label: "Projects" },
   { href: "/work-log", label: "Work Log" },
 ];

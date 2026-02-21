@@ -1,9 +1,9 @@
-import ExperienceTabs from "@/components/experience/ExperienceTabs";
-import { companies, certifications } from "@/data/experience";
+import CompanyTimeline from "@/components/experience/CompanyTimeline";
+import { companies } from "@/data/experience";
 
 export const metadata = {
   title: "Experience | Venetis-Paraskevas Pallikaras",
-  description: "Work experience and certifications.",
+  description: "Work experience and professional journey.",
 };
 
 export default function ExperiencePage() {
@@ -12,14 +12,14 @@ export default function ExperiencePage() {
       {/* Page header */}
       <div className="mb-12">
         <h1 className="text-3xl font-bold text-foreground sm:text-4xl">
-          Experience & Qualifications
+          Work Experience
         </h1>
         <p className="mt-3 max-w-2xl text-muted-foreground">
-          A timeline of my professional journey and certifications.
+          A timeline of my professional journey.
         </p>
       </div>
 
-      <ExperienceTabs companies={companies} certifications={certifications} />
+      <CompanyTimeline companies={companies} />
     </div>
   );
 }
