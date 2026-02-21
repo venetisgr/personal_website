@@ -9,7 +9,7 @@ import { profile } from "@/data/profile";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/experience", label: "Experience" },
+  { href: "/experience", label: "Work Experience" },
   { href: "/projects", label: "Projects" },
   { href: "/work-log", label: "Work Log" },
 ];
@@ -53,7 +53,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Logo / Name */}
         <Link href="/" className="text-lg font-bold tracking-tight text-foreground">
-          {profile.name.split(" ")[0]}
+          Venetis Pallikaras
           <span className="text-primary">.</span>
         </Link>
 
