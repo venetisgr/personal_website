@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   Sparkles,
   GraduationCap,
@@ -213,6 +214,15 @@ export default function ResumeSection() {
                 {skill}
               </span>
             ))}
+          </div>
+          <div className="mt-8 flex justify-center">
+            <Image
+              src="/welcome_logo.png"
+              alt="Welcome logo"
+              width={200}
+              height={200}
+              className="rounded-xl"
+            />
           </div>
         </motion.div>
       </div>
