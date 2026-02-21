@@ -14,9 +14,31 @@ export default function HeroSection() {
     <section className="flex min-h-[70vh] items-center">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <motion.div
+          className="mb-8 space-y-2 border-l-2 border-primary/30 pl-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
+        >
+          <p className="text-sm italic text-muted-foreground">
+            &ldquo;Ad astra per aspera&rdquo;{" "}
+            <span className="not-italic">Through hardships to the stars.</span>
+            <span className="ml-1 text-xs text-muted-foreground/70">
+              — Latin proverb (popularized in Renaissance Europe)
+            </span>
+          </p>
+          <p className="text-sm italic text-muted-foreground">
+            &ldquo;Αἰὲν ἀριστεύειν&rdquo;{" "}
+            <span className="not-italic">Ever to excel.</span>
+            <span className="ml-1 text-xs text-muted-foreground/70">
+              — Homer, Iliad
+            </span>
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
         >
           <p className="mb-4 text-sm font-medium tracking-wide text-primary">
             Hello, I&apos;m
@@ -27,7 +49,7 @@ export default function HeroSection() {
           className="mb-4 text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           {profile.name}
         </motion.h1>
@@ -36,7 +58,7 @@ export default function HeroSection() {
           className="mb-6 text-xl text-muted-foreground sm:text-2xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
           {profile.title}
         </motion.h2>
@@ -45,7 +67,7 @@ export default function HeroSection() {
           className="mb-8 max-w-2xl space-y-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
         >
           {profile.bio.map((paragraph, i) => (
             <p
@@ -61,7 +83,7 @@ export default function HeroSection() {
           className="flex flex-wrap items-center gap-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
         >
           <span className="flex items-center gap-1.5 text-sm text-muted-foreground">
             <MapPin size={16} />
