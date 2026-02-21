@@ -15,13 +15,13 @@ export interface YearDetail {
 export interface Role {
   title: string;
   period: string;
-  location: string;
   years: YearDetail[];
 }
 
 export interface Company {
   id: string;
   name: string;
+  location: string;
   startYear: string;
   endYear: string;
   roles: Role[];
@@ -48,13 +48,13 @@ export const companies: Company[] = [
   {
     id: "nfcu",
     name: "Navy Federal Credit Union",
+    location: "Vienna, VA",
     startYear: "2023",
     endYear: "Present",
     roles: [
       {
         title: "Senior Data Scientist",
         period: "2023 – Present",
-        location: "Vienna, VA",
         years: [
           {
             year: "2024 — AI/ML Center of Excellence",

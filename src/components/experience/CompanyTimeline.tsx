@@ -39,6 +39,10 @@ function CompanyCard({ company, index }: { company: Company; index: number }) {
           </h3>
           <p className="text-sm text-muted-foreground">
             {company.startYear} – {company.endYear}
+            <span className="ml-2 inline-flex items-center gap-1">
+              <MapPin size={12} />
+              {company.location}
+            </span>
           </p>
         </div>
       </div>
@@ -53,10 +57,6 @@ function CompanyCard({ company, index }: { company: Company; index: number }) {
               </h4>
               <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
                 {role.period}
-              </span>
-              <span className="flex items-center gap-1 text-xs text-muted-foreground">
-                <MapPin size={12} />
-                {role.location}
               </span>
             </div>
 
