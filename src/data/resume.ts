@@ -51,7 +51,7 @@ export const resume = {
     {
       company: "Navy Federal Credit Union",
       role: "Senior Data Scientist, Data Scientist",
-      location: "USA",
+      location: "McLean, VA, USA",
       period: "2023 – Present",
       description: "",
     },
@@ -65,21 +65,21 @@ export const resume = {
     {
       company: "General Electric",
       role: "Data Science Intern",
-      location: "USA",
+      location: "Atlanta, GA, USA",
       period: "2022",
       description: "",
     },
     {
       company: "HelcoML Systems",
       role: "Data Scientist",
-      location: "",
+      location: "Athens, Attica, Greece",
       period: "2019 – 2021",
       description: "",
     },
     {
       company: 'National Centre for Scientific Research "Demokritos"',
       role: "Research Intern",
-      location: "Greece",
+      location: "Athens, Attica, Greece",
       period: "2018",
       description: "",
     },
