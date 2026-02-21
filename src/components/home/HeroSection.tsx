@@ -14,25 +14,33 @@ export default function HeroSection() {
     <section className="flex min-h-[70vh] items-center">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <motion.div
-          className="mb-8 space-y-2 border-l-2 border-primary/30 pl-4"
+          className="mb-10 grid grid-cols-1 gap-6 sm:grid-cols-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-sm italic text-muted-foreground">
-            &ldquo;Ad astra per aspera&rdquo;{" "}
-            <span className="not-italic">Through hardships to the stars.</span>
-            <span className="ml-1 text-xs text-muted-foreground/70">
-              — Latin proverb (popularized in Renaissance Europe)
-            </span>
-          </p>
-          <p className="text-sm italic text-muted-foreground">
-            &ldquo;Αἰὲν ἀριστεύειν&rdquo;{" "}
-            <span className="not-italic">Ever to excel.</span>
-            <span className="ml-1 text-xs text-muted-foreground/70">
+          <div className="border-l-2 border-primary/30 pl-4">
+            <p className="text-lg font-medium italic text-foreground sm:text-xl">
+              &ldquo;Ad astra per aspera&rdquo;
+            </p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Through hardships to the stars.
+            </p>
+            <p className="mt-0.5 text-xs text-muted-foreground/70">
+              — Latin proverb
+            </p>
+          </div>
+          <div className="border-l-2 border-primary/30 pl-4">
+            <p className="text-lg font-medium italic text-foreground sm:text-xl">
+              &ldquo;Αἰὲν ἀριστεύειν&rdquo;
+            </p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Ever to excel.
+            </p>
+            <p className="mt-0.5 text-xs text-muted-foreground/70">
               — Homer, Iliad
-            </span>
-          </p>
+            </p>
+          </div>
         </motion.div>
 
         <motion.div
