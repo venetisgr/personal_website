@@ -146,6 +146,21 @@ function YearSection({
   );
 }
 
+/** Parses **bold** markers in text and returns React nodes */
+function renderFormattedText(text: string) {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={i} className="font-semibold text-foreground">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    return part;
+  });
+}
+
 function DetailSectionBlock({ section }: { section: DetailSection }) {
   return (
     <div>
@@ -162,13 +177,15 @@ function DetailSectionBlock({ section }: { section: DetailSection }) {
                   className="flex items-start gap-2 text-sm text-muted-foreground"
                 >
                   <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent/70" />
-                  <span>{item}</span>
+                  <span>{renderFormattedText(item)}</span>
                 </li>
               ))}
             </ul>
+          ) : block === "---" ? (
+            <hr key={i} className="border-border/50" />
           ) : (
             <p key={i} className="text-sm text-muted-foreground">
-              {block}
+              {renderFormattedText(block)}
             </p>
           ),
         )}
