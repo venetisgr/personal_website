@@ -29,7 +29,7 @@ export const events: Event[] = [
     location: "Orlando, FL",
     date: "November 2024",
     description:
-      "Presented two technical papers at the annual ANS conference \u2014 Agentic Retrieval Augmented Generation for Advanced Reactor Thermal Hydraulic System and Retrieval Augmented Generation for Liquid Sodium Facility Documentation Processing \u2014 showcasing applications of RAG methods for domain-specific retrieval and structured information extraction.",
+      "Presented two technical papers at the annual ANS conference; Agentic Retrieval Augmented Generation for Advanced Reactor Thermal Hydraulic System and Retrieval Augmented Generation for Liquid Sodium Facility Documentation Processing. Showcasing applications of RAG methods for domain-specific retrieval and structured information extraction.",
     role: "speaker",
     tags: ["Technical Research", "RAG", "Domain-Specific RAG", "ANS", "Research", "Generative AI"],
   },
@@ -40,7 +40,7 @@ export const events: Event[] = [
     location: "San Francisco, CA",
     date: "April 2023",
     description:
-      "Completed an intensive bootcamp covering end-to-end large language model systems \u2014 including prompt engineering, RAG architectures, model evaluation frameworks, and deployment best practices.",
+      "Completed an intensive bootcamp covering end-to-end large language model systems, including prompt engineering, RAG architectures, model evaluation frameworks, and deployment best practices.",
     role: "attendee",
     tags: ["LLM Engineering", "RAG Architectures", "Prompt Engineering", "Production Deployment", "LLM", "RAG", "GenAI"],
   },
