@@ -57,7 +57,7 @@ export const companies: Company[] = [
         period: "2023 – Present",
         years: [
           {
-            year: "2026 — AI/ML Center of Excellence",
+            year: "2026 — Enterprise AI Strategy",
             highlights: ["TBD :)"],
             details: [],
           },
