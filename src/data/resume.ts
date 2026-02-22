@@ -38,7 +38,7 @@ export const resume = {
     {
       institution: "Democritus University of Thrace",
       degree: "BSc & MSc in Electrical and Computer Engineering",
-      location: "Xanthi, Greece",
+      location: "Xanthi, Xanthi, Greece",
       period: "Oct 2014 – Nov 2019",
       gpa: '8.85 / 10 "Excellent" (3.7 / 4.0 WES)',
       honors: [
