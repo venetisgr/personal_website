@@ -182,7 +182,7 @@ function DetailSectionBlock({ section }: { section: DetailSection }) {
               ))}
             </ul>
           ) : block === "---" ? (
-            <hr key={i} className="border-border/50" />
+            <div key={i} className="h-2" />
           ) : (
             <p key={i} className="text-sm text-muted-foreground">
               {renderFormattedText(block)}
