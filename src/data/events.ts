@@ -45,17 +45,6 @@ export const events: Event[] = [
     tags: ["LLM Engineering", "RAG Architectures", "Prompt Engineering", "Production Deployment", "LLM", "RAG", "GenAI"],
   },
   {
-    id: "event-8",
-    title: "AWS Summit Atlanta 2022",
-    conference: "AWS Summit Atlanta 2022",
-    location: "Atlanta, GA",
-    date: "May 2022",
-    description:
-      "Attended AWS's flagship cloud summit exploring scalable AI/ML and infrastructure solutions. Participated in the AWS DeepRacer Challenge, gaining hands-on reinforcement learning experience in an autonomous racing environment.",
-    role: "attendee",
-    tags: ["Cloud Computing", "AI/ML Infrastructure", "Scalable Systems", "AWS DeepRacer Challenge", "Reinforcement Learning", "Cloud"],
-  },
-  {
     id: "event-10",
     title: "Southern Data Science Conference 2022",
     conference: "Southern Data Science Conference",
@@ -65,6 +54,17 @@ export const events: Event[] = [
       "Attended a regional practitioner data science conference featuring a full-day workshop and sessions on real-world AI and ML tools, including \"Machine Learning 2.0 with Hugging Face Transformers\" led by Hugging Face Chief Evangelist Julien Simon, which provided a high-level introduction to Transformers and NLP techniques for practical applications.",
     role: "attendee",
     tags: ["Data Science", "Machine Learning", "NLP", "Hugging Face", "Practical Workshops"],
+  },
+  {
+    id: "event-8",
+    title: "AWS Summit Atlanta 2022",
+    conference: "AWS Summit Atlanta 2022",
+    location: "Atlanta, GA",
+    date: "May 2022",
+    description:
+      "Attended AWS's flagship cloud summit exploring scalable AI/ML and infrastructure solutions. Participated in the AWS DeepRacer Challenge, gaining hands-on reinforcement learning experience in an autonomous racing environment.",
+    role: "attendee",
+    tags: ["Cloud Computing", "AI/ML Infrastructure", "Scalable Systems", "AWS DeepRacer Challenge", "Reinforcement Learning", "Cloud"],
   },
   {
     id: "event-9",
