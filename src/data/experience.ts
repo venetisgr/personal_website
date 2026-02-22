@@ -45,7 +45,7 @@ export interface Certification {
 }
 
 export interface CertificationGroup {
-  label: string;
+  issuer: string;
   items: string[];
 }
 
@@ -496,11 +496,11 @@ export const certifications: Certification[] = [
 
 export const certificationGroups: CertificationGroup[] = [
   {
-    label: "Certifications",
-    items: ["AWS-CCP"],
+    issuer: "Amazon Web Services",
+    items: ["AWS Certified Cloud Practitioner (CCP)"],
   },
   {
-    label: "Stanford AI Professional Program",
+    issuer: "Stanford AI Professional Program",
     items: [
       "ML with Graphs",
       "NLP with DL",
@@ -508,7 +508,7 @@ export const certificationGroups: CertificationGroup[] = [
     ],
   },
   {
-    label: "Databricks",
+    issuer: "Databricks",
     items: [
       "Generative AI Fundamentals",
       "Data Engineer Associate",
