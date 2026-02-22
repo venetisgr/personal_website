@@ -49,13 +49,6 @@ export interface CertificationGroup {
   items: string[];
 }
 
-export interface Conference {
-  name: string;
-  year: string;
-  role?: "presenter" | "attendee";
-  note?: string;
-}
-
 export const companies: Company[] = [
   {
     id: "nfcu",
@@ -522,34 +515,5 @@ export const certificationGroups: CertificationGroup[] = [
       "NLP with Deep Learning",
       "Natural Language Understanding (NLU)",
     ],
-  },
-];
-
-export const conferences: Conference[] = [
-  {
-    name: "The AI Agent Conference by LangChain | Interrupt",
-    year: "2025",
-    role: "attendee",
-  },
-  {
-    name: "ANS Winter Conference and Expo",
-    year: "2024",
-    role: "presenter",
-  },
-  {
-    name: "Full Stack LLM Bootcamp",
-    year: "2023",
-    role: "attendee",
-  },
-  {
-    name: "AWS Summit Atlanta",
-    year: "2022",
-    role: "attendee",
-    note: "AWS DeepRacer Challenge participant",
-  },
-  {
-    name: "ODSC West",
-    year: "2021",
-    role: "attendee",
   },
 ];

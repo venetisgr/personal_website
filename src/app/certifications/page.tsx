@@ -1,10 +1,9 @@
 import CertificationGroups from "@/components/certifications/CertificationGroups";
-import ConferenceList from "@/components/certifications/ConferenceList";
-import { certificationGroups, conferences } from "@/data/experience";
+import { certificationGroups } from "@/data/experience";
 
 export const metadata = {
   title: "Certifications | Venetis-Paraskevas Pallikaras",
-  description: "Professional certifications, qualifications, and conferences.",
+  description: "Professional certifications and qualifications.",
 };
 
 export default function CertificationsPage() {
@@ -21,14 +20,6 @@ export default function CertificationsPage() {
       </div>
 
       <CertificationGroups groups={certificationGroups} />
-
-      {/* Conferences section */}
-      <div className="mt-16">
-        <h2 className="mb-6 text-2xl font-bold text-foreground">
-          Conferences
-        </h2>
-        <ConferenceList conferences={conferences} />
-      </div>
     </div>
   );
 }
