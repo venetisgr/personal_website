@@ -12,17 +12,6 @@ export interface Event {
 
 export const events: Event[] = [
   {
-    id: "event-1",
-    title: "Data + AI Summit 2025",
-    conference: "Databricks Data + AI Summit",
-    location: "San Francisco, CA",
-    date: "June 2025",
-    description:
-      "Attended Databricks' flagship conference covering the latest in data engineering, AI/ML, and generative AI on the Lakehouse platform.",
-    role: "attendee",
-    tags: ["Databricks", "GenAI", "Data Engineering"],
-  },
-  {
     id: "event-5",
     title: "The AI Agent Conference by LangChain \u2502 Interrupt 2025",
     conference: "AI Agent Conference (LangChain / Interrupt)",
