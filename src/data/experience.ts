@@ -316,6 +316,15 @@ export const companies: Company[] = [
               },
             ],
           },
+          {
+            year: "2023 — AI/ML Center of Excellence",
+            highlights: [
+              "Built and deployed the first-generation Voice of Member pipeline, transforming call and text data into structured sentiment, summaries, keyphrases, and taxonomy-driven insights. This was NFCU's first production NLP model.",
+              "Designed and productionized Topic Analysis and Intent Identification models using BERTopic and transformer-based architectures to better understand interaction drivers.",
+              "Delivered cross-functional ad-hoc analytics powered by NLP models, enabling data-driven decision-making across business units.",
+            ],
+            details: [],
+          },
         ],
       },
       {
@@ -325,9 +334,7 @@ export const companies: Company[] = [
           {
             year: "2023 — AI/ML Center of Excellence",
             highlights: [
-              "Built and deployed the first-generation Voice of Member pipeline, transforming call and text data into structured sentiment, summaries, keyphrases, and taxonomy-driven insights. This was NFCU's first production NLP model.",
-              "Designed and productionized Topic Analysis and Intent Identification models using BERTopic and transformer-based architectures to better understand interaction drivers.",
-              "Delivered cross-functional ad-hoc analytics powered by NLP models, enabling data-driven decision-making across business units.",
+              "For detailed accomplishments during this period, see the 2023 section under the Senior Data Scientist role above.",
             ],
             details: [],
           },
