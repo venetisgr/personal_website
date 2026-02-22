@@ -171,7 +171,13 @@ export const companies: Company[] = [
       {
         title: "Data Scientist",
         period: "2023 – 2023",
-        years: [],
+        years: [
+          {
+            year: "2023 — AI/ML Center of Excellence",
+            highlights: [],
+            details: [],
+          },
+        ],
       },
     ],
   },
