@@ -34,28 +34,6 @@ export const events: Event[] = [
     tags: ["LangChain", "AI Agents", "LLMs"],
   },
   {
-    id: "event-2",
-    title: "AWS re:Invent 2024",
-    conference: "AWS re:Invent",
-    location: "Las Vegas, NV",
-    date: "December 2024",
-    description:
-      "Participated in Amazon Web Services' annual cloud computing conference, exploring sessions on ML infrastructure, serverless AI, and responsible AI practices.",
-    role: "attendee",
-    tags: ["AWS", "Cloud", "ML Infrastructure"],
-  },
-  {
-    id: "event-3",
-    title: "NeurIPS 2024",
-    conference: "Conference on Neural Information Processing Systems",
-    location: "Vancouver, Canada",
-    date: "December 2024",
-    description:
-      "Attended one of the premier machine learning research conferences, engaging with cutting-edge research on large language models, alignment, and AI safety.",
-    role: "attendee",
-    tags: ["Research", "NLP", "Deep Learning"],
-  },
-  {
     id: "event-6",
     title: "ANS Winter Conference and Expo 2024",
     conference: "American Nuclear Society Winter Conference",
@@ -65,17 +43,6 @@ export const events: Event[] = [
       "Presented at the American Nuclear Society's Winter Conference and Expo, sharing research and insights with nuclear science and engineering professionals.",
     role: "speaker",
     tags: ["Nuclear", "Presentation"],
-  },
-  {
-    id: "event-4",
-    title: "AI & Big Data Expo North America 2024",
-    conference: "AI & Big Data Expo",
-    location: "Santa Clara, CA",
-    date: "June 2024",
-    description:
-      "Explored enterprise AI solutions, MLOps best practices, and real-world case studies on deploying generative AI at scale.",
-    role: "attendee",
-    tags: ["Enterprise AI", "MLOps", "Big Data"],
   },
   {
     id: "event-7",
