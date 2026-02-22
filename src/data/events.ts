@@ -69,11 +69,11 @@ export const events: Event[] = [
   {
     id: "event-9",
     title: "ODSC West 2021",
-    conference: "Open Data Science Conference",
-    location: "San Francisco, CA",
-    date: "2021",
+    conference: "Open Data Science Conference – West",
+    location: "Virtual / San Francisco, CA",
+    date: "November 2021",
     description:
-      "Attended the Open Data Science Conference West, engaging with sessions on machine learning, data science tools, and AI applications.",
+      "Attended one of the largest data science and AI practitioner conferences, featuring hands-on workshops, expert talks, and sessions covering machine learning, NLP, and practical AI systems.",
     role: "attendee",
     tags: ["Data Science", "ML", "Open Source"],
   },
