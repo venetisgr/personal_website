@@ -67,7 +67,7 @@ export const companies: Company[] = [
               "Built an automated LLM-as-a-Judge validation framework to detect incorrect classifications and missed topics, improving reliability and trust in large-scale LLM deployments.",
               "Delivered GenAI-driven mortgage application and documentation insight discovery (leveraging the Insight Discovery Framework), producing structured complaint analysis, competitive comparisons, and executive-ready reporting.",
               "Created a distilled sentiment analysis dataset and trained smaller models aligned with team-specific sentiment guidelines, enabling scalable cross-business adoption.",
-              "Designed and productionized a 6-month forward Engagement Tier predictive model, reducing ~1500 features to ~100 via feature selection and SHAP, with fully MLOps-ready training and scoring pipelines.",
+              "Designed and productionized a 6-month forward Engagement Tier predictive model, reducing ~1500 features to ~100 via feature selection and SHAP, with fully MLOps-ready training and scoring pipelines. The model was trained utilizing XGBoost and HyperOpt in Databricks.",
               "Engineered graph-based member importance and relevancy features using PageRank-, TF-IDF-inspired, and custom metrics across transaction, referral, and product graphs.",
               "Led LLM-based analysis of government shutdown impact, identifying affected members, extracting related topics, and quantifying sentiment shifts.",
               "Standardized enterprise GenAI adoption by building reusable LLM templates, inference notebooks, and embedding pipelines adopted across multiple teams.",
