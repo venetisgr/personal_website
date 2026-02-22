@@ -1,4 +1,4 @@
-import ResumeSection from "@/components/home/ResumeSection";
+import ResumeDocument from "@/components/resume/ResumeDocument";
 
 export const metadata = {
   title: "Resume | Venetis-Paraskevas Pallikaras",
@@ -8,7 +8,7 @@ export const metadata = {
 export default function ResumePage() {
   return (
     <div className="pt-16">
-      <ResumeSection />
+      <ResumeDocument />
     </div>
   );
 }

@@ -7,13 +7,33 @@ export interface EducationEntry {
   honors?: string[];
 }
 
-export interface WorkExperienceEntry {
+export interface ExperienceRoleLine {
   company: string;
   role: string;
   location: string;
   period: string;
-  description: string;
+}
+
+export interface ExperienceEntry {
+  roles: ExperienceRoleLine[];
+  bullets: string[];
+}
+
+export interface ProjectEntry {
+  title: string;
+  subtitle?: string;
   bullets?: string[];
+}
+
+export interface PublicationEntry {
+  title: string;
+  date: string;
+  url?: string;
+}
+
+export interface CertificationLine {
+  label: string;
+  items: string;
 }
 
 export interface Publication {
@@ -23,6 +43,15 @@ export interface Publication {
   date: string;
   doi?: string;
   url?: string;
+}
+
+export interface WorkExperienceEntry {
+  company: string;
+  role: string;
+  location: string;
+  period: string;
+  description: string;
+  bullets?: string[];
 }
 
 export const resume = {
@@ -39,15 +68,190 @@ export const resume = {
     {
       institution: "Democritus University of Thrace",
       degree: "BSc & MSc in Electrical and Computer Engineering",
-      location: "Xanthi, Xanthi, Greece",
+      location: "Xanthi, Greece",
       period: "Oct 2014 – Nov 2019",
-      gpa: '8.85 / 10 "Excellent" (3.7 / 4.0 WES)',
+      gpa: '8.85 / 10 "Excellent", 3.7 / 4.0 (WES Course by Course Evaluation)',
       honors: [
         "Second Among Graduating Year (Salutatorian)",
         "Thesis: Automated speaker diarization and recognition in videos (Grade: 10/10)",
       ],
     },
   ] as EducationEntry[],
+  categorizedSkills: [
+    {
+      category: "Programming Languages",
+      items: ["Python", "SQL", "R", "Java", "JavaScript", "C++", "C"],
+    },
+    {
+      category: "ML Software",
+      items: [
+        "Tensorflow",
+        "Keras",
+        "Pytorch",
+        "Scikit-Learn",
+        "HDBSCAN",
+        "XGBoost",
+        "LightGBM",
+        "Optuna",
+        "HyperOpt",
+        "PySpark",
+        "PYG",
+        "TinyML",
+      ],
+    },
+    {
+      category: "NLP & Generative AI Software",
+      items: [
+        "NLTK",
+        "SpaCy",
+        "BERTopic",
+        "KeyBert",
+        "Hugging Face",
+        "Transformers",
+        "vLLM",
+        "LangChain",
+        "LlamaIndex",
+        "Unsloth",
+        "Axolotl",
+        "Megatron",
+        "LangGraph",
+        "Azure AI Foundry",
+        "n8n",
+        "Agent Reinforcement Trainer (ART)",
+        "Copilot Studio",
+        "AutoGen",
+      ],
+    },
+    {
+      category: "Analytical Techniques",
+      items: [
+        "Machine Learning",
+        "Deep Learning",
+        "Web Scraping",
+        "Computer Vision",
+        "GraphML",
+        "NLP",
+        "LLMs",
+        "Generative AI",
+        "Reinforcement Learning",
+        "LLM-Finetuning",
+        "GRPO",
+      ],
+    },
+    {
+      category: "Visualization",
+      items: ["Tableau", "Plotly", "Dash", "Seaborn", "D3.js", "Matplotlib"],
+    },
+    {
+      category: "Other",
+      items: [
+        "Git",
+        "Linux",
+        "HTML",
+        "CSS",
+        "Beautiful Soup",
+        "Selenium",
+        "Pinecone",
+        "MLflow",
+        "Weights & Biases",
+        "FastAPI",
+        "LangSmith",
+        "Modal",
+        "Vercel",
+      ],
+    },
+  ],
+  experienceEntries: [
+    {
+      roles: [
+        {
+          company: "Navy Federal Credit Union",
+          role: "Senior Data Scientist",
+          location: "Vienna, VA, USA",
+          period: "Sept 2023 – Present",
+        },
+        {
+          company: "Navy Federal Credit Union",
+          role: "Data Scientist",
+          location: "Vienna, VA, USA",
+          period: "Jan 2023 – Sept 2023",
+        },
+      ],
+      bullets: [
+        "Designed and deployed a GenAI Insight Discovery Pipeline on Databricks for large-scale call and chat transcripts, performing record-level theme extraction (vLLM), recursive summarization (LangChain), and topic quantification. Converting unstructured member conversations into structured insights to enable early issue detection and data-driven decision-making.",
+        "Accelerated enterprise GenAI adoption by building reusable LLM notebooks, prompt templates, and starter workflows. This streamlined internal LLM access and reduced onboarding time for analysts and data scientists.",
+        "Created multiple NLP solutions, developing sentiment analysis, emotion classification, praise/complaint detection, a multi-stage aspect-based sentiment & summarization system that identifies the core topics/issues, maps it to the relevant product/feature, evaluates sentiment, and generates summaries per topic/issue. These models are used across business units to elevate member experience and operational efficiency.",
+        "Developed a RAG pipeline to assist our call representatives and other internal teams to automate their daily workflow. Built internal RAG evaluation system (LLM-as-a-judge) which was aligned with human scoring.",
+        "Delivered insight-driven reporting for multiple enterprise initiatives, including government shutdown impact analysis, competitive banking product comparison, CD product redesign support, loan application journey pain-point extraction, and OMNI (mobile/online banking) post-launch issue discovery.",
+        "Presented monthly at Databricks User Group, sharing internal NLP/GenAI solutions and advanced Databricks practices.",
+        "Developed predictive models, including a 6-month forward-looking member engagement model supporting proactive outreach and retention initiative by utilizing XGBoost and HyperOpt.",
+      ],
+    },
+    {
+      roles: [
+        {
+          company: "General Electric",
+          role: "Summer Practicum",
+          location: "Atlanta, GA, USA",
+          period: "May 2022 – Aug 2022",
+        },
+      ],
+      bullets: [
+        "Explored model compression techniques and deployed deep learning models on Arduino using TensorFlow Lite for edge inference.",
+      ],
+    },
+    {
+      roles: [
+        {
+          company: 'National Centre for Scientific Research "Demokritos"',
+          role: "Research Intern",
+          location: "Athens, Greece",
+          period: "July 2018 – Sept 2018",
+        },
+      ],
+      bullets: [
+        "Analyzed the analog behavior of Memristors and executed Retention and Electrical Characterization measurements on them.",
+      ],
+    },
+  ] as ExperienceEntry[],
+  projectsAndPublications: {
+    projects: [
+      {
+        title: "Predict likelihood of members having housing insecurity issues",
+        subtitle: "Top 1 Accuracy | Sponsor: Humana — Fall 2022",
+        bullets: [
+          "Created an ensemble of decision tree-based algorithms using XGBoost, LightGBM and Optuna for hyperparameter tuning.",
+        ],
+      },
+    ] as ProjectEntry[],
+    publications: [
+      {
+        title:
+          'Published Paper: "Retrieval Augmented Generation for Liquid Sodium Facility Documentation Processing"',
+        date: "Dec 2024",
+        url: "https://www.researchgate.net/publication/387798937_Retrieval_Augmented_Generation_for_Liquid_Sodium_Facility_Documentation_Processing",
+      },
+      {
+        title:
+          'Published Paper: "Agentic Retrieval Augmented Generation for Advanced Reactor Thermal Hydraulic System"',
+        date: "Dec 2024",
+        url: "https://www.researchgate.net/publication/387798703_Agentic_Retrieval_Augmented_Generation_for_Advanced_Reactor_Thermal_Hydraulic_System",
+      },
+    ] as PublicationEntry[],
+  },
+  certificationLines: [
+    { label: "Certifications", items: "AWS-CCP" },
+    {
+      label: "Stanford AI Professional Program",
+      items: "ML with Graphs, NLP with DL, Natural Language Understanding (NLU)",
+    },
+    {
+      label: "Databricks",
+      items:
+        "Generative AI fundamentals, Data Engineer Associate, ML Data Scientist Associate, Generative AI Engineer Associate",
+    },
+  ] as CertificationLine[],
+  // Legacy fields used by home page
   experience: [
     {
       company: "Navy Federal Credit Union",
@@ -55,21 +259,6 @@ export const resume = {
       location: "Vienna, VA, USA",
       period: "2023 – Present",
       description: "",
-      bullets: [
-        "Architected and productionized the enterprise Insight Discovery Framework (Map → Reduce → Classification), transforming large-scale call and chat data into structured intelligence used across departments.",
-        "Built an automated LLM-as-a-Judge validation framework to detect incorrect classifications and missed topics, improving reliability and trust in large-scale LLM deployments.",
-        "Delivered GenAI-driven mortgage application and documentation insight discovery, producing structured complaint analysis, competitive comparisons, and executive-ready reporting.",
-        "Designed and productionized a 6-month forward Engagement Tier predictive model, reducing ~1500 features to ~100 via feature selection and SHAP, with fully MLOps-ready training and scoring pipelines.",
-        "Engineered graph-based member importance and relevancy features using PageRank-, TF-IDF-inspired, and custom metrics across transaction, referral, and product graphs.",
-        "Standardized LLM inference across the enterprise by building reusable GPU-optimized template notebooks (utilizing vLLM and LangChain), establishing the fastest production baseline.",
-        "Finetuned and deployed the organization's first 7B and 70B LLM models.",
-        "Designed NFCU's first internal assistant utilizing RAG technology to assist call representatives and internal teams.",
-        "Built and deployed the first-generation Voice of Member pipeline, transforming call and text data into structured sentiment, summaries, keyphrases, and taxonomy-driven insights. This was NFCU's first production NLP model.",
-        "Designed and productionized Topic Analysis and Intent Identification models using BERTopic and transformer-based architectures.",
-        "Re-architected and productionized PEGA-based marketing feature pipelines, engineering 11 feature-store-ready attributes.",
-        "Led LLM-based analysis of government shutdown impact, identifying affected members, extracting related topics, and quantifying sentiment shifts.",
-        "Trained and enabled multiple teams on LLM best practices, Databricks workflows, and Insight Discovery methodologies.",
-      ],
     },
     {
       company: "Georgia Institute of Technology",
@@ -77,21 +266,13 @@ export const resume = {
       location: "Atlanta, GA, USA",
       period: "2022 – 2023",
       description: "",
-      bullets: [
-        "GTA for the courses CS 7641-Machine Learning and CSE 6242-Data and Visual Analytics",
-      ],
     },
     {
       company: "General Electric",
-      role: "Data Science Intern",
+      role: "Summer Practicum",
       location: "Atlanta, GA, USA",
       period: "2022",
       description: "",
-      bullets: [
-        "Created Deep Learning models based on the ANN, CNN and LSTM architectures using Tensorflow",
-        "Explored multiple model size reduction techniques",
-        "Deployed on an Arduino using Tensorflow Lite in order to perform inference on the edge",
-      ],
     },
     {
       company: "HelcoML Systems",
@@ -99,10 +280,6 @@ export const resume = {
       location: "Athens, Attica, Greece",
       period: "2019 – 2021",
       description: "",
-      bullets: [
-        "Audio Deep Learning Model Training (TensorFlow, Keras)",
-        "Machine Learning Applications (XGBoost, Scikit-Learn)",
-      ],
     },
     {
       company: 'National Centre for Scientific Research "Demokritos"',
@@ -110,13 +287,6 @@ export const resume = {
       location: "Athens, Attica, Greece",
       period: "2018",
       description: "",
-      bullets: [
-        "Electrical characterization of memristive devices (memristors)",
-        "Analyzed the behavior of memristors during consecutive read and write tests",
-        "Executed retention measurements of memristors",
-        "Analyzed the behavior of memristors under various temperatures",
-        "Analyzed the analog behavior of memristors",
-      ],
     },
   ] as WorkExperienceEntry[],
   publications: [
@@ -231,93 +401,5 @@ export const resume = {
     "BeautifulSoup",
     "Azure",
     "AWS",
-  ],
-  categorizedSkills: [
-    {
-      category: "Programming Languages",
-      items: ["Python", "SQL", "R", "Java", "JavaScript", "C++", "C"],
-    },
-    {
-      category: "ML & DL Software",
-      items: [
-        "Tensorflow",
-        "Keras",
-        "Pytorch",
-        "Scikit-Learn",
-        "HDBSCAN",
-        "XGBoost",
-        "LightGBM",
-        "Optuna",
-        "HyperOpt",
-        "PySpark",
-        "PYG",
-        "TinyML",
-      ],
-    },
-    {
-      category: "NLP & Generative AI Software",
-      items: [
-        "NLTK",
-        "SpaCy",
-        "BERTopic",
-        "KeyBert",
-        "Hugging Face",
-        "Transformers",
-        "vLLM",
-        "LangChain",
-        "LlamaIndex",
-        "Unsloth",
-        "Axolotl",
-        "Megatron",
-        "LangGraph",
-        "Azure AI Foundry",
-        "n8n",
-        "Agent Reinforcement Trainer (ART)",
-        "Copilot Studio",
-        "AutoGen",
-      ],
-    },
-    {
-      category: "Analytical Techniques",
-      items: [
-        "Machine Learning",
-        "Deep Learning",
-        "Web Scraping",
-        "Computer Vision",
-        "GraphML",
-        "NLP",
-        "LLMs",
-        "Generative AI",
-        "Reinforcement Learning",
-        "LLM-Finetuning",
-        "GRPO",
-      ],
-    },
-    {
-      category: "Visualization",
-      items: ["Tableau", "Plotly", "Dash", "Seaborn", "D3.js", "Matplotlib"],
-    },
-    {
-      category: "Data & Cloud Platforms",
-      items: ["Databricks", "Azure", "AWS"],
-    },
-    {
-      category: "Other",
-      items: [
-        "Git",
-        "Linux",
-        "HTML",
-        "CSS",
-        "Beautiful Soup",
-        "Selenium",
-        "Pinecone",
-        "MLflow",
-        "Weights & Biases",
-        "FastAPI",
-        "LangSmith",
-        "Modal",
-        "Vercel",
-      ],
-    },
   ],
 };
