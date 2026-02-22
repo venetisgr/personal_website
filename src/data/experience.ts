@@ -71,7 +71,7 @@ export const companies: Company[] = [
             ],
             details: [
               {
-                title: "Enterprise Topic Intelligence & Validation",
+                title: "Enterprise Topic Intelligence - Insight Discovery Framework",
                 content: [
                   "**In 2025, I expanded the Insight Discovery platform into a structured, continuously operating enterprise intelligence system.**",
                   "---",
@@ -83,8 +83,11 @@ export const companies: Company[] = [
                     "Standardized topic tracking across teams",
                   ],
                   "To reduce false positives and classification noise, I introduced noise-capture classes, allowing the model to avoid forced misclassification when insufficient signal was present. This materially improved classification reliability and downstream analytics quality.",
-                  "---",
-                  "**LLM-as-a-Judge Validation Framework:**",
+                ],
+              },
+              {
+                title: "LLM-as-a-Judge Validation Framework",
+                content: [
                   "To ensure classification quality at scale, I built an automated LLM-as-a-Judge validation layer that:",
                   [
                     "Detects incorrect classifications",
