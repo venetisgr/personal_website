@@ -83,7 +83,7 @@ export const resume = {
       items: ["Python", "SQL", "R", "Java", "JavaScript", "C++", "C"],
     },
     {
-      category: "ML Software",
+      category: "ML & DL Software",
       items: [
         "Tensorflow",
         "Keras",
@@ -141,6 +141,10 @@ export const resume = {
     {
       category: "Visualization",
       items: ["Tableau", "Plotly", "Dash", "Seaborn", "D3.js", "Matplotlib"],
+    },
+    {
+      category: "Data & Cloud Platforms",
+      items: ["Databricks", "Azure", "AWS"],
     },
     {
       category: "Other",
