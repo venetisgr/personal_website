@@ -74,6 +74,7 @@ export const companies: Company[] = [
               "Delivered executive and cross-functional reports powered by the Insight Discovery Framework to support data-driven strategic decisions.",
               "Trained and enabled multiple teams on LLM best practices, Databricks workflows, and Insight Discovery methodologies, presenting advanced generative AI techniques and optimization strategies across internal forums.",
               "Re-architected and productionized PEGA-based marketing feature pipelines, engineering 11 feature-store-ready attributes and enabling scalable marketing model development.",
+              "Presented monthly at Databricks User Group, sharing internal NLP/GenAI solutions and advanced Databricks practices.",
             ],
             details: [
               {
@@ -151,6 +152,7 @@ export const companies: Company[] = [
                     "Predict future engagement tier shifts",
                     "Identify drivers influencing engagement changes",
                   ],
+                  "The model was trained utilizing XGBoost and HyperOpt in Databricks.",
                   "This supports proactive engagement strategies and strategic prioritization.",
                 ],
               },
