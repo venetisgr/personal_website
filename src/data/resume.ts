@@ -13,6 +13,7 @@ export interface WorkExperienceEntry {
   location: string;
   period: string;
   description: string;
+  bullets?: string[];
 }
 
 export interface Publication {
@@ -51,9 +52,24 @@ export const resume = {
     {
       company: "Navy Federal Credit Union",
       role: "Senior Data Scientist, Data Scientist",
-      location: "McLean, VA, USA",
+      location: "Vienna, VA, USA",
       period: "2023 – Present",
       description: "",
+      bullets: [
+        "Architected and productionized the enterprise Insight Discovery Framework (Map → Reduce → Classification), transforming large-scale call and chat data into structured intelligence used across departments.",
+        "Built an automated LLM-as-a-Judge validation framework to detect incorrect classifications and missed topics, improving reliability and trust in large-scale LLM deployments.",
+        "Delivered GenAI-driven mortgage application and documentation insight discovery, producing structured complaint analysis, competitive comparisons, and executive-ready reporting.",
+        "Designed and productionized a 6-month forward Engagement Tier predictive model, reducing ~1500 features to ~100 via feature selection and SHAP, with fully MLOps-ready training and scoring pipelines.",
+        "Engineered graph-based member importance and relevancy features using PageRank-, TF-IDF-inspired, and custom metrics across transaction, referral, and product graphs.",
+        "Standardized LLM inference across the enterprise by building reusable GPU-optimized template notebooks (utilizing vLLM and LangChain), establishing the fastest production baseline.",
+        "Finetuned and deployed the organization's first 7B and 70B LLM models.",
+        "Designed NFCU's first internal assistant utilizing RAG technology to assist call representatives and internal teams.",
+        "Built and deployed the first-generation Voice of Member pipeline, transforming call and text data into structured sentiment, summaries, keyphrases, and taxonomy-driven insights. This was NFCU's first production NLP model.",
+        "Designed and productionized Topic Analysis and Intent Identification models using BERTopic and transformer-based architectures.",
+        "Re-architected and productionized PEGA-based marketing feature pipelines, engineering 11 feature-store-ready attributes.",
+        "Led LLM-based analysis of government shutdown impact, identifying affected members, extracting related topics, and quantifying sentiment shifts.",
+        "Trained and enabled multiple teams on LLM best practices, Databricks workflows, and Insight Discovery methodologies.",
+      ],
     },
     {
       company: "Georgia Institute of Technology",
@@ -61,6 +77,9 @@ export const resume = {
       location: "Atlanta, GA, USA",
       period: "2022 – 2023",
       description: "",
+      bullets: [
+        "GTA for the courses CS 7641-Machine Learning and CSE 6242-Data and Visual Analytics",
+      ],
     },
     {
       company: "General Electric",
@@ -68,6 +87,11 @@ export const resume = {
       location: "Atlanta, GA, USA",
       period: "2022",
       description: "",
+      bullets: [
+        "Created Deep Learning models based on the ANN, CNN and LSTM architectures using Tensorflow",
+        "Explored multiple model size reduction techniques",
+        "Deployed on an Arduino using Tensorflow Lite in order to perform inference on the edge",
+      ],
     },
     {
       company: "HelcoML Systems",
@@ -75,6 +99,10 @@ export const resume = {
       location: "Athens, Attica, Greece",
       period: "2019 – 2021",
       description: "",
+      bullets: [
+        "Audio Deep Learning Model Training (TensorFlow, Keras)",
+        "Machine Learning Applications (XGBoost, Scikit-Learn)",
+      ],
     },
     {
       company: 'National Centre for Scientific Research "Demokritos"',
@@ -82,6 +110,13 @@ export const resume = {
       location: "Athens, Attica, Greece",
       period: "2018",
       description: "",
+      bullets: [
+        "Electrical characterization of memristive devices (memristors)",
+        "Analyzed the behavior of memristors during consecutive read and write tests",
+        "Executed retention measurements of memristors",
+        "Analyzed the behavior of memristors under various temperatures",
+        "Analyzed the analog behavior of memristors",
+      ],
     },
   ] as WorkExperienceEntry[],
   publications: [
