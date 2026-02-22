@@ -53,7 +53,7 @@ export const companies: Company[] = [
     endYear: "Present",
     roles: [
       {
-        title: "Senior Data Scientist",
+        title: "Senior Data Scientist - Data Scientist",
         period: "2023 – Present",
         years: [
           {
@@ -167,6 +167,62 @@ export const companies: Company[] = [
             ],
           },
         ],
+      },
+    ],
+  },
+  {
+    id: "gatech",
+    name: "Georgia Institute of Technology",
+    location: "Atlanta, GA, USA",
+    startYear: "2022",
+    endYear: "2023",
+    roles: [
+      {
+        title: "Graduate Teaching Assistant",
+        period: "2022 – 2023",
+        years: [],
+      },
+    ],
+  },
+  {
+    id: "ge",
+    name: "General Electric",
+    location: "Atlanta, GA, USA",
+    startYear: "2022",
+    endYear: "2022",
+    roles: [
+      {
+        title: "Data Science Intern",
+        period: "2022",
+        years: [],
+      },
+    ],
+  },
+  {
+    id: "helcoml",
+    name: "HelcoML Systems",
+    location: "Athens, Attica, Greece",
+    startYear: "2019",
+    endYear: "2021",
+    roles: [
+      {
+        title: "Data Scientist",
+        period: "2019 – 2021",
+        years: [],
+      },
+    ],
+  },
+  {
+    id: "demokritos",
+    name: 'National Centre for Scientific Research "Demokritos"',
+    location: "Athens, Attica, Greece",
+    startYear: "2018",
+    endYear: "2018",
+    roles: [
+      {
+        title: "Research Intern",
+        period: "2018",
+        years: [],
       },
     ],
   },
