@@ -29,6 +29,9 @@ export default function ConferenceList({ conferences }: ConferenceListProps) {
               {conf.name}
             </h4>
             <p className="text-xs text-muted-foreground">{conf.year}</p>
+            {conf.note && (
+              <p className="text-xs text-muted-foreground">{conf.note}</p>
+            )}
           </div>
 
           {conf.role === "presenter" && (

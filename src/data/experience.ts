@@ -53,6 +53,7 @@ export interface Conference {
   name: string;
   year: string;
   role?: "presenter" | "attendee";
+  note?: string;
 }
 
 export const companies: Company[] = [
@@ -539,6 +540,12 @@ export const conferences: Conference[] = [
     name: "Full Stack LLM Bootcamp",
     year: "2023",
     role: "attendee",
+  },
+  {
+    name: "AWS Summit Atlanta",
+    year: "2022",
+    role: "attendee",
+    note: "AWS DeepRacer Challenge participant",
   },
   {
     name: "ODSC West",
