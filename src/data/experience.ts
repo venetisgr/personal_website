@@ -512,7 +512,7 @@ export const certificationGroups: CertificationGroup[] = [
     issuer: "Stanford AI Professional Program",
     items: [
       "ML with Graphs",
-      "NLP with DL",
+      "NLP with Deep Learning",
       "Natural Language Understanding (NLU)",
     ],
   },
