@@ -191,7 +191,15 @@ export const companies: Company[] = [
       {
         title: "Graduate Teaching Assistant",
         period: "2022 – 2023",
-        years: [],
+        years: [
+          {
+            year: "2022 – 2023",
+            highlights: [
+              "GTA for the courses CS 7641-Machine Learning and CSE 6242-Data and Visual Analytics",
+            ],
+            details: [],
+          },
+        ],
       },
     ],
   },
@@ -205,7 +213,17 @@ export const companies: Company[] = [
       {
         title: "Data Science Intern",
         period: "2022",
-        years: [],
+        years: [
+          {
+            year: "2022 — Summer Practicum",
+            highlights: [
+              "Created Deep Learning models based on the ANN, CNN and LSTM architectures using Tensorflow",
+              "Explored multiple model size reduction techniques",
+              "Deployed on an Arduino using Tensorflow Lite in order to perform inference on the edge",
+            ],
+            details: [],
+          },
+        ],
       },
     ],
   },
@@ -219,7 +237,16 @@ export const companies: Company[] = [
       {
         title: "Data Scientist",
         period: "2019 – 2021",
-        years: [],
+        years: [
+          {
+            year: "2019 – 2021",
+            highlights: [
+              "Audio Deep Learning Model Training (TensorFlow, Keras)",
+              "Machine Learning Applications (XGBoost, Scikit-Learn)",
+            ],
+            details: [],
+          },
+        ],
       },
     ],
   },
@@ -233,7 +260,19 @@ export const companies: Company[] = [
       {
         title: "Research Intern",
         period: "2018",
-        years: [],
+        years: [
+          {
+            year: "2018 — Institute of Nanoscience and Nanotechnology",
+            highlights: [
+              "Electrical characterization of memristive devices (memristors)",
+              "Analyzed the behavior of memristors during consecutive read and write tests",
+              "Executed retention measurements of memristors",
+              "Analyzed the behavior of memristors under various temperatures",
+              "Analyzed the analog behavior of memristors",
+            ],
+            details: [],
+          },
+        ],
       },
     ],
   },
