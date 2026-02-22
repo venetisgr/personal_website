@@ -9,20 +9,25 @@ import { profile } from "@/data/profile";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/experience", label: "Experience" },
+  { href: "/resume", label: "Resume" },
+  { href: "/experience", label: "Work Experience" },
+  { href: "/certifications", label: "Certifications" },
   { href: "/projects", label: "Projects" },
-  { href: "/work-log", label: "Work Log" },
+  { href: "/events", label: "Events" },
 ];
 
 export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const stored = localStorage.getItem("theme");
-    if (stored === "dark" || (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    if (stored === "light") {
+      setDark(false);
+      document.documentElement.classList.remove("dark");
+    } else {
       setDark(true);
       document.documentElement.classList.add("dark");
     }
@@ -53,7 +58,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Logo / Name */}
         <Link href="/" className="text-lg font-bold tracking-tight text-foreground">
-          {profile.name.split(" ")[0]}
+          Venetis Pallikaras
           <span className="text-primary">.</span>
         </Link>
 
