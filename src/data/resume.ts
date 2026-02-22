@@ -241,6 +241,12 @@ export const resume = {
         date: "Dec 2024",
         url: "https://www.researchgate.net/publication/387798703_Agentic_Retrieval_Augmented_Generation_for_Advanced_Reactor_Thermal_Hydraulic_System",
       },
+      {
+        title:
+          'Published Paper: "Artificial Neural Network Performance Boost using Probabilistic Recovery with Fast Cascade Training"',
+        date: "Nov 2020",
+        url: "https://www.researchgate.net/publication/348234182_Artificial_Neural_Network_Performance_Boost_using_Probabilistic_Recovery_with_Fast_Cascade_Training",
+      },
     ] as PublicationEntry[],
   },
   certificationLines: [
