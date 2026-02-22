@@ -74,7 +74,6 @@ export const companies: Company[] = [
                 title: "Enterprise Topic Intelligence - Insight Discovery Framework",
                 content: [
                   "**In 2025, I expanded the Insight Discovery platform into a structured, continuously operating enterprise intelligence system.**",
-                  "---",
                   "**30-Topic Enterprise Classification Pipeline:**",
                   "I designed and deployed a 30-topic LLM classification framework over call and chat data, enabling:",
                   [
