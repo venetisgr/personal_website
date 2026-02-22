@@ -57,6 +57,11 @@ export const companies: Company[] = [
         period: "2023 – Present",
         years: [
           {
+            year: "2026 — AI/ML Center of Excellence",
+            highlights: ["TBD :)"],
+            details: [],
+          },
+          {
             year: "2025 — AI/ML Center of Excellence",
             highlights: [
               "Built an automated LLM-as-a-Judge validation framework to detect incorrect classifications and missed topics, improving reliability and trust in large-scale LLM deployments.",
