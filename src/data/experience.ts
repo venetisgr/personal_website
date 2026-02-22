@@ -199,7 +199,7 @@ export const companies: Company[] = [
               {
                 title: "Databricks User Group Presentations",
                 content: [
-                  "**Presented monthly at Databricks User Group, sharing internal NLP/GenAI solutions and advanced Databricks practices.**",
+                  "Presented monthly at Databricks User Group, sharing internal NLP/GenAI solutions and advanced Databricks practices.",
                 ],
               },
               {
