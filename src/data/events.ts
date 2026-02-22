@@ -56,6 +56,17 @@ export const events: Event[] = [
     tags: ["Cloud Computing", "AI/ML Infrastructure", "Scalable Systems", "AWS DeepRacer Challenge", "Reinforcement Learning", "Cloud"],
   },
   {
+    id: "event-10",
+    title: "Southern Data Science Conference 2022",
+    conference: "Southern Data Science Conference",
+    location: "Atlanta, GA",
+    date: "September 2022",
+    description:
+      "Attended a regional practitioner data science conference featuring a full-day workshop and sessions on real-world AI and ML tools, including \"Machine Learning 2.0 with Hugging Face Transformers\" led by Hugging Face Chief Evangelist Julien Simon, which provided a high-level introduction to Transformers and NLP techniques for practical applications.",
+    role: "attendee",
+    tags: ["Data Science", "Machine Learning", "NLP", "Hugging Face", "Practical Workshops"],
+  },
+  {
     id: "event-9",
     title: "ODSC West 2021",
     conference: "Open Data Science Conference \u2013 West",
