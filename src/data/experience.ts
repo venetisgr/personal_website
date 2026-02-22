@@ -71,8 +71,122 @@ export const companies: Company[] = [
             ],
             details: [
               {
-                title: "TODO: Detailed accomplishments to be added",
-                content: [],
+                title: "Enterprise Topic Intelligence & Validation",
+                content: [
+                  "In 2025, I expanded the Insight Discovery platform into a structured, continuously operating enterprise intelligence system.",
+                  "30-Topic Enterprise Classification Pipeline:",
+                  "I designed and deployed a 30-topic LLM classification framework over call and chat data, enabling:",
+                  [
+                    "Daily structured monitoring of emerging issues",
+                    "Quantification of recurring themes",
+                    "Standardized topic tracking across teams",
+                  ],
+                  "To reduce false positives and classification noise, I introduced noise-capture classes, allowing the model to avoid forced misclassification when insufficient signal was present. This materially improved classification reliability and downstream analytics quality.",
+                  "LLM-as-a-Judge Validation Framework:",
+                  "To ensure classification quality at scale, I built an automated LLM-as-a-Judge validation layer that:",
+                  [
+                    "Detects incorrect classifications",
+                    "Identifies topics that were missed but should have been selected",
+                    "Quantifies topic-level hit ratios",
+                  ],
+                  "This framework significantly increased trust in LLM-driven outputs and enabled scalable validation without manual review.",
+                ],
+              },
+              {
+                title: "GenAI for Lending & Mortgage Intelligence",
+                content: [
+                  "Building on the Insight Discovery framework, I delivered GenAI-driven analysis for mortgage application and documentation workflows.",
+                  "This included:",
+                  [
+                    "Complaint and friction point discovery and Competitive comparison analysis (2 map steps)",
+                    "Recursive aggregation of issues (2 reduce steps)",
+                    "Executive-ready reporting and slide decks",
+                  ],
+                  "These analyses helped business teams better understand:",
+                  [
+                    "Documentation-related bottlenecks",
+                    "Member experience pain points",
+                    "Competitive perception trends",
+                  ],
+                  "The notebooks were designed to be reusable, enabling quarterly analysis going forward.",
+                ],
+              },
+              {
+                title: "Sentiment Model Distillation & Democratization",
+                content: [
+                  "To scale sentiment analysis beyond LLM inference:",
+                  [
+                    "I created a distilled sentiment dataset aligned with team-specific sentiment guidelines.",
+                    "Trained smaller models using this dataset.",
+                    "Enabled business teams to adopt lighter-weight models aligned to their own definitions of positive/negative sentiment.",
+                  ],
+                  "This reduced dependency on large models and supported sustainable adoption across departments.",
+                ],
+              },
+              {
+                title: "Predictive Modeling: Engagement Tier (6-Month Forward)",
+                content: [
+                  "I designed and productionized a 6-month forward Engagement Tier predictive model focused on both prediction and driver explainability.",
+                  "Key components:",
+                  [
+                    "Feature-store-only input design",
+                    "Feature reduction from ~1500 → ~100 using importance metrics + SHAP",
+                    "Hyperparameter optimization",
+                    "Fully MLOps-ready training and scoring notebooks",
+                    "One-pager documentation for stakeholders",
+                  ],
+                  "The model serves two purposes:",
+                  [
+                    "Predict future engagement tier shifts",
+                    "Identify drivers influencing engagement changes",
+                  ],
+                  "This supports proactive engagement strategies and strategic prioritization.",
+                ],
+              },
+              {
+                title: "Graph-Based Feature Engineering & Network Intelligence",
+                content: [
+                  "In parallel, I engineered graph-derived features to enhance member-level understanding.",
+                  "Member Importance (V1):",
+                  [
+                    "Developed importance metrics using transfer count, transfer volume, weighted combinations, and PageRank-inspired logic",
+                    "Applied across transaction, referral, and product graphs",
+                  ],
+                  "Member Relevancy (V2):",
+                  [
+                    "Created 12 graph-based features inspired by TF-IDF principles",
+                    "Designed custom metrics to measure contextual relevance within networks",
+                  ],
+                  "These features provide a network-aware perspective for predictive modeling and segmentation.",
+                ],
+              },
+              {
+                title: "Strategic Initiative: Government Shutdown Analysis",
+                content: [
+                  "I led an LLM-based analysis to assess the impact of a government shutdown:",
+                  [
+                    "Identified affected members via transcript analysis",
+                    "Extracted related discussion topics",
+                    "Measured sentiment shifts",
+                    "Analyzed those who received payment assistance",
+                  ],
+                  "This provided leadership with structured visibility into the real-world impact of macro events on members.",
+                ],
+              },
+              {
+                title: "Enterprise GenAI Standardization & Enablement",
+                content: [
+                  "To support scalable adoption, I:",
+                  [
+                    "Built reusable LLM inference templates",
+                    "Created embedding pipelines for downstream tasks",
+                    "Developed standardized notebooks for map-reduce-classification workflows",
+                    "Delivered ad-hoc executive and cross-functional reports powered by Insight Discovery",
+                    "Trained multiple teams on LLM usage, best practices, and reproducibility",
+                    "Presented internally on advanced Databricks workflows and generative AI optimization techniques",
+                  ],
+                  "This shifted GenAI from experimental usage to a structured, reusable enterprise capability.",
+                ],
               },
             ],
           },
