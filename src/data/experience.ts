@@ -54,7 +54,7 @@ export const companies: Company[] = [
     roles: [
       {
         title: "Senior Data Scientist",
-        period: "2024 – Present",
+        period: "2023 – Present",
         years: [
           {
             year: "2024 — AI/ML Center of Excellence",
