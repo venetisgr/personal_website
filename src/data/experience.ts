@@ -68,6 +68,7 @@ export const companies: Company[] = [
               "Standardized enterprise GenAI adoption by building reusable LLM templates, inference notebooks, and embedding pipelines adopted across multiple teams.",
               "Delivered executive and cross-functional reports powered by the Insight Discovery Framework to support data-driven strategic decisions.",
               "Trained and enabled multiple teams on LLM best practices, Databricks workflows, and Insight Discovery methodologies, presenting advanced generative AI techniques and optimization strategies across internal forums.",
+              "Re-architected and productionized PEGA-based marketing feature pipelines, engineering 11 feature-store-ready attributes and enabling scalable marketing model development.",
             ],
             details: [
               {
@@ -176,6 +177,16 @@ export const companies: Company[] = [
                     "Analyzed those who received payment assistance",
                   ],
                   "This provided leadership with structured visibility into the real-world impact of macro events on members.",
+                ],
+              },
+              {
+                title: "Marketing Feature Engineering (PEGA Features)",
+                content: [
+                  [
+                    "Re-architected and productionized PEGA-based marketing feature pipelines, consolidating multiple data sources into a unified master dataset and engineering 11 feature-store-ready attributes.",
+                    "Built reusable feature engineering templates with performance optimizations and MLOps-ready code, enabling scalable and maintainable marketing model development.",
+                    "Collaborated cross-functionally with marketing stakeholders to align features with campaign and engagement strategy objectives.",
+                  ],
                 ],
               },
               {
