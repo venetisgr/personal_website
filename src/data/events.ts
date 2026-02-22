@@ -31,7 +31,7 @@ export const events: Event[] = [
     description:
       "Attended LangChain's flagship agent-centric AI conference focused on agent engineering, orchestration frameworks, tooling, and production deployment of autonomous multi-agent systems.",
     role: "attendee",
-    tags: ["Agent AI", "Generative AI", "Orchestration", "AI Tooling", "Evaluation", "Hands-On Labs"],
+    tags: ["Agent AI", "Generative AI", "Orchestration", "AI Tooling", "Evaluation", "Hands-On Labs", "LangChain", "Agents", "GenAI", "Systems"],
   },
   {
     id: "event-6",
@@ -42,7 +42,7 @@ export const events: Event[] = [
     description:
       "Presented two technical papers at the annual ANS conference \u2014 Agentic Retrieval Augmented Generation for Advanced Reactor Thermal Hydraulic System and Retrieval Augmented Generation for Liquid Sodium Facility Documentation Processing \u2014 showcasing applications of RAG methods for domain-specific retrieval and structured information extraction.",
     role: "speaker",
-    tags: ["Technical Research", "RAG", "Domain-Specific RAG"],
+    tags: ["Technical Research", "RAG", "Domain-Specific RAG", "ANS", "Research", "Generative AI"],
   },
   {
     id: "event-7",
@@ -53,7 +53,7 @@ export const events: Event[] = [
     description:
       "Completed an intensive bootcamp covering end-to-end large language model systems \u2014 including prompt engineering, RAG architectures, model evaluation frameworks, and deployment best practices.",
     role: "attendee",
-    tags: ["LLM Engineering", "RAG Architectures", "Prompt Engineering", "Production Deployment"],
+    tags: ["LLM Engineering", "RAG Architectures", "Prompt Engineering", "Production Deployment", "LLM", "RAG", "GenAI"],
   },
   {
     id: "event-8",
@@ -64,7 +64,7 @@ export const events: Event[] = [
     description:
       "Attended AWS's flagship cloud summit exploring scalable AI/ML and infrastructure solutions. Participated in the AWS DeepRacer Challenge, gaining hands-on reinforcement learning experience in an autonomous racing environment.",
     role: "attendee",
-    tags: ["Cloud Computing", "AI/ML Infrastructure", "Scalable Systems", "AWS DeepRacer Challenge"],
+    tags: ["Cloud Computing", "AI/ML Infrastructure", "Scalable Systems", "AWS DeepRacer Challenge", "Reinforcement Learning", "Cloud"],
   },
   {
     id: "event-9",
@@ -75,6 +75,6 @@ export const events: Event[] = [
     description:
       "Attended one of the largest data science and AI practitioner conferences, featuring hands-on workshops, expert talks, and sessions covering machine learning, NLP, and practical AI systems.",
     role: "attendee",
-    tags: ["Data Science", "Machine Learning", "Deep Learning", "AI Workshops"],
+    tags: ["ODSC", "Data Science", "Machine Learning", "Deep Learning", "AI Workshops"],
   },
 ];
