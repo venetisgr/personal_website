@@ -1,5 +1,5 @@
-import SkillBadges from "@/components/experience/SkillBadges";
-import { certifications } from "@/data/experience";
+import CertificationGroups from "@/components/certifications/CertificationGroups";
+import { certificationGroups } from "@/data/experience";
 
 export const metadata = {
   title: "Certifications | Venetis-Paraskevas Pallikaras",
@@ -19,7 +19,7 @@ export default function CertificationsPage() {
         </p>
       </div>
 
-      <SkillBadges certifications={certifications} />
+      <CertificationGroups groups={certificationGroups} />
     </div>
   );
 }

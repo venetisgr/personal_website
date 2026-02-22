@@ -44,6 +44,11 @@ export interface Certification {
   year: string;
 }
 
+export interface CertificationGroup {
+  label: string;
+  items: string[];
+}
+
 export const companies: Company[] = [
   {
     id: "nfcu",
@@ -486,5 +491,29 @@ export const certifications: Certification[] = [
     name: "Google Cloud Professional Developer",
     issuer: "Google Cloud",
     year: "2021",
+  },
+];
+
+export const certificationGroups: CertificationGroup[] = [
+  {
+    label: "Certifications",
+    items: ["AWS-CCP"],
+  },
+  {
+    label: "Stanford AI Professional Program",
+    items: [
+      "ML with Graphs",
+      "NLP with DL",
+      "Natural Language Understanding (NLU)",
+    ],
+  },
+  {
+    label: "Databricks",
+    items: [
+      "Generative AI Fundamentals",
+      "Data Engineer Associate",
+      "ML Data Scientist Associate",
+      "Generative AI Engineer Associate",
+    ],
   },
 ];
