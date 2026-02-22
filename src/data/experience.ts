@@ -48,7 +48,7 @@ export const companies: Company[] = [
   {
     id: "nfcu",
     name: "Navy Federal Credit Union",
-    location: "Vienna, VA",
+    location: "Vienna, VA, USA",
     startYear: "2023",
     endYear: "Present",
     roles: [
