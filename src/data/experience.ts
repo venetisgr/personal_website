@@ -496,7 +496,16 @@ export const certifications: Certification[] = [
 
 export const certificationGroups: CertificationGroup[] = [
   {
-    issuer: "Amazon Web Services",
+    issuer: "Databricks",
+    items: [
+      "Generative AI Fundamentals",
+      "Data Engineer Associate",
+      "ML Data Scientist Associate",
+      "Generative AI Engineer Associate",
+    ],
+  },
+  {
+    issuer: "Amazon Web Services (AWS)",
     items: ["AWS Certified Cloud Practitioner (CCP)"],
   },
   {
@@ -505,15 +514,6 @@ export const certificationGroups: CertificationGroup[] = [
       "ML with Graphs",
       "NLP with DL",
       "Natural Language Understanding (NLU)",
-    ],
-  },
-  {
-    issuer: "Databricks",
-    items: [
-      "Generative AI Fundamentals",
-      "Data Engineer Associate",
-      "ML Data Scientist Associate",
-      "Generative AI Engineer Associate",
     ],
   },
 ];

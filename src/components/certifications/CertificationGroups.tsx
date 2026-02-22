@@ -9,9 +9,9 @@ interface CertificationGroupsProps {
 }
 
 const issuerIcons: Record<string, typeof Award> = {
-  "Amazon Web Services": Cloud,
-  "Stanford AI Professional Program": GraduationCap,
   Databricks: Database,
+  "Amazon Web Services (AWS)": Cloud,
+  "Stanford AI Professional Program": GraduationCap,
 };
 
 export default function CertificationGroups({
