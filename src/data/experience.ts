@@ -57,6 +57,26 @@ export const companies: Company[] = [
         period: "2023 – Present",
         years: [
           {
+            year: "2025 — AI/ML Center of Excellence",
+            highlights: [
+              "Built an automated LLM-as-a-Judge validation framework to detect incorrect classifications and missed topics, improving reliability and trust in large-scale LLM deployments.",
+              "Delivered GenAI-driven mortgage application and documentation insight discovery (leveraging the Insight Discovery Framework), producing structured complaint analysis, competitive comparisons, and executive-ready reporting.",
+              "Created a distilled sentiment analysis dataset and trained smaller models aligned with team-specific sentiment guidelines, enabling scalable cross-business adoption.",
+              "Designed and productionized a 6-month forward Engagement Tier predictive model, reducing ~1500 features to ~100 via feature selection and SHAP, with fully MLOps-ready training and scoring pipelines.",
+              "Engineered graph-based member importance and relevancy features using PageRank-, TF-IDF-inspired, and custom metrics across transaction, referral, and product graphs.",
+              "Led LLM-based analysis of government shutdown impact, identifying affected members, extracting related topics, and quantifying sentiment shifts.",
+              "Standardized enterprise GenAI adoption by building reusable LLM templates, inference notebooks, and embedding pipelines adopted across multiple teams.",
+              "Delivered executive and cross-functional reports powered by the Insight Discovery Framework to support data-driven strategic decisions.",
+              "Trained and enabled multiple teams on LLM best practices, Databricks workflows, and Insight Discovery methodologies, presenting advanced generative AI techniques and optimization strategies across internal forums.",
+            ],
+            details: [
+              {
+                title: "TODO: Detailed accomplishments to be added",
+                content: [],
+              },
+            ],
+          },
+          {
             year: "2024 — AI/ML Center of Excellence",
             highlights: [
               "Architected and productionized the enterprise Insight Discovery Framework (Map → Reduce → Classification), transforming large-scale call and chat data into structured intelligence used across departments. This framework can be used to surface product issues, member complaints, praise signals, competitive comparisons, and emerging themes, etc.",
