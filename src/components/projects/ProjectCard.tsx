@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Folder } from "lucide-react";
+import { ExternalLink, Github, Folder, Calendar } from "lucide-react";
 import type { Project } from "@/data/projects";
 
 interface ProjectCardProps {
@@ -51,9 +51,13 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 
       {/* Content */}
       <div className="flex flex-1 flex-col p-6">
-        <h3 className="mb-2 text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+        <h3 className="mb-1 text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
           {project.title}
         </h3>
+        <div className="mb-2 flex items-center gap-1.5 text-xs text-muted-foreground">
+          <Calendar size={12} />
+          <span>{project.date}</span>
+        </div>
         <p className="mb-4 flex-1 text-sm leading-relaxed text-muted-foreground">
           {project.longDescription}
         </p>
