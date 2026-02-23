@@ -2,7 +2,7 @@
 
 🔗 **Live site:** [https://venetis.vercel.app/](https://venetis.vercel.app/)
 
-A personal portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features four pages: a landing page with bio and resume, a work experience timeline, a project showcase, and a quarterly work log.
+A personal portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features six pages: a landing page, a resume, a work experience timeline, certifications, a project showcase, and an events page.
 
 ## Tech Stack
 
@@ -121,13 +121,15 @@ Open your web browser and go to:
 http://localhost:3000
 ```
 
-You should see the home page with the hero section and resume.
+You should see the home page with the hero section.
 
 Navigate between pages using the top navigation bar:
-- **Home** (`/`) — Bio and resume
-- **Experience** (`/experience`) — Work timeline, education, certifications
+- **Home** (`/`) — Landing page with hero section
+- **Resume** (`/resume`) — Professional summary, skills, and key highlights
+- **Work Experience** (`/experience`) — Work timeline and education
+- **Certifications** (`/certifications`) — Professional certifications
 - **Projects** (`/projects`) — Project showcase grid
-- **Work Log** (`/work-log`) — Quarterly accomplishments
+- **Events** (`/events`) — Conferences and events
 
 ### Step 6: Stop the development server
 
@@ -142,10 +144,10 @@ All personal content is in the `src/data/` folder. Edit these files to make the 
 | File | What to edit |
 |------|-------------|
 | `src/data/profile.ts` | Your name, job title, bio paragraph, location, social media URLs |
-| `src/data/resume.ts` | Professional summary, skills list, key career highlights |
-| `src/data/experience.ts` | Work history (companies, roles, dates, achievements), education, certifications |
-| `src/data/projects.ts` | Project titles, descriptions, tech stacks, demo/source code links |
-| `src/data/work-log.ts` | Quarterly work accomplishments organized by year |
+| `src/data/resume.ts` | Professional summary, education, work experience, projects, publications, certifications |
+| `src/data/experience.ts` | Work history (companies, roles, year-by-year details), education, certifications |
+| `src/data/projects.ts` | Project titles, descriptions, dates, tech stacks, demo/source code links |
+| `src/data/events.ts` | Conferences and events (title, location, date, role, tags) |
 
 To add your resume PDF for the download button, place a file named `resume.pdf` in the `public/` folder.
 
@@ -234,7 +236,7 @@ From this point on, every time you push to the `main` branch on GitHub, Vercel w
 
 ### (Optional) Custom domain
 
-To use your own domain (e.g., `alexjohnson.dev`):
+To use your own domain:
 
 1. Go to your project on the Vercel dashboard
 2. Click **Settings** > **Domains**

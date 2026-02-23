@@ -195,7 +195,7 @@ export const resume = {
       roles: [
         {
           company: "General Electric",
-          role: "Summer Practicum",
+          role: "Data Science Intern",
           location: "Atlanta, GA, USA",
           period: "May 2022 – Aug 2022",
         },
@@ -279,7 +279,7 @@ export const resume = {
     },
     {
       company: "General Electric",
-      role: "Summer Practicum",
+      role: "Data Science Intern",
       location: "Atlanta, GA, USA",
       period: "2022",
       description: "",
