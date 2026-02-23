@@ -2,7 +2,7 @@
 
 🔗 **Live site:** [https://venetis.vercel.app/](https://venetis.vercel.app/)
 
-A personal portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features four pages: a landing page with bio and resume, a work experience timeline, a project showcase, and a quarterly work log.
+A personal portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features six pages: a landing page, a resume, a work experience timeline, certifications, a project showcase, and an events page.
 
 ## Tech Stack
 
@@ -121,13 +121,15 @@ Open your web browser and go to:
 http://localhost:3000
 ```
 
-You should see the home page with the hero section and resume.
+You should see the home page with the hero section.
 
 Navigate between pages using the top navigation bar:
-- **Home** (`/`) — Bio and resume
-- **Experience** (`/experience`) — Work timeline, education, certifications
+- **Home** (`/`) — Landing page with hero section
+- **Resume** (`/resume`) — Professional summary, skills, and key highlights
+- **Work Experience** (`/experience`) — Work timeline and education
+- **Certifications** (`/certifications`) — Professional certifications
 - **Projects** (`/projects`) — Project showcase grid
-- **Work Log** (`/work-log`) — Quarterly accomplishments
+- **Events** (`/events`) — Conferences and events
 
 ### Step 6: Stop the development server
 
