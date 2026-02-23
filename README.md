@@ -144,10 +144,10 @@ All personal content is in the `src/data/` folder. Edit these files to make the 
 | File | What to edit |
 |------|-------------|
 | `src/data/profile.ts` | Your name, job title, bio paragraph, location, social media URLs |
-| `src/data/resume.ts` | Professional summary, skills list, key career highlights |
-| `src/data/experience.ts` | Work history (companies, roles, dates, achievements), education, certifications |
-| `src/data/projects.ts` | Project titles, descriptions, tech stacks, demo/source code links |
-| `src/data/work-log.ts` | Quarterly work accomplishments organized by year |
+| `src/data/resume.ts` | Professional summary, education, work experience, projects, publications, certifications |
+| `src/data/experience.ts` | Work history (companies, roles, year-by-year details), education, certifications |
+| `src/data/projects.ts` | Project titles, descriptions, dates, tech stacks, demo/source code links |
+| `src/data/events.ts` | Conferences and events (title, location, date, role, tags) |
 
 To add your resume PDF for the download button, place a file named `resume.pdf` in the `public/` folder.
 
@@ -236,7 +236,7 @@ From this point on, every time you push to the `main` branch on GitHub, Vercel w
 
 ### (Optional) Custom domain
 
-To use your own domain (e.g., `alexjohnson.dev`):
+To use your own domain:
 
 1. Go to your project on the Vercel dashboard
 2. Click **Settings** > **Domains**
