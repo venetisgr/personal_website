@@ -394,7 +394,7 @@ export const companies: Company[] = [
         period: "2022",
         years: [
           {
-            year: "2022 — Summer Practicum",
+            year: "2022 — Data Science Intern",
             highlights: [
               "Created Deep Learning models based on the ANN, CNN and LSTM architectures using Tensorflow",
               "Explored multiple model size reduction techniques",
