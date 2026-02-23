@@ -25,9 +25,9 @@ export const projects: Project[] = [
   {
     id: "proj-1",
     title: "Personal Portfolio Website",
-    description: "A personal portfolio website with bio, work experience timeline, project showcase, and work log.",
+    description: "A personal portfolio website with resume, work experience, certifications, projects, and events.",
     longDescription:
-      "A responsive portfolio website built with Next.js 16 App Router and TypeScript. Features four pages — a landing page with bio and resume, a work experience timeline, a project showcase grid, and a quarterly work log. Includes dark/light mode toggle, scroll-triggered animations, and a content-data separation architecture for easy customization.",
+      "A responsive portfolio website built with Next.js 16 App Router and TypeScript. Features six pages — a landing page, a resume, a work experience timeline, certifications, a project showcase grid, and an events page. Includes dark/light mode toggle, scroll-triggered animations, and a content-data separation architecture for easy customization.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide React"],
     date: "February 2026",
     demoUrl: "https://venetis.vercel.app/",
